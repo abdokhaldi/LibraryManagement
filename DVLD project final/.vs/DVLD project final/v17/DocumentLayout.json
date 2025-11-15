@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\DVLD project final\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A65E342-BF9D-4ABF-856F-3F4F7F7D3CE5}|..\\DVLD\\DVLD.csproj|c:\\users\\hp\\source\\repos\\dvld\\applications\\international license\\frmlistinternationallicesnseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A65E342-BF9D-4ABF-856F-3F4F7F7D3CE5}|..\\DVLD\\DVLD.csproj|c:\\users\\hp\\source\\repos\\dvld\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A65E342-BF9D-4ABF-856F-3F4F7F7D3CE5}|..\\DVLD\\DVLD.csproj|c:\\users\\hp\\source\\repos\\dvld\\applications\\local driving license\\frmlistlocaldrivinglicesnseapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A65E342-BF9D-4ABF-856F-3F4F7F7D3CE5}|..\\DVLD\\DVLD.csproj|c:\\users\\hp\\source\\repos\\dvld\\drivers\\frmlistdrivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A65E342-BF9D-4ABF-856F-3F4F7F7D3CE5}|..\\DVLD\\DVLD.csproj|c:\\users\\hp\\source\\repos\\dvld\\people\\frmlistpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A65E342-BF9D-4ABF-856F-3F4F7F7D3CE5}|..\\DVLD\\DVLD.csproj|c:\\users\\hp\\source\\repos\\dvld\\applications\\renew local license\\frmrenewlocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 105,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmListInternationalLicesnseApplications.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DVLD\\Applications\\International License\\frmListInternationalLicesnseApplications.cs",
+              "RelativeDocumentMoniker": "..\\DVLD\\Applications\\International License\\frmListInternationalLicesnseApplications.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DVLD\\Applications\\International License\\frmListInternationalLicesnseApplications.cs [Design]",
+              "RelativeToolTip": "..\\DVLD\\Applications\\International License\\frmListInternationalLicesnseApplications.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T10:58:46.17Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DVLD\\frmMain.cs",
+              "RelativeDocumentMoniker": "..\\DVLD\\frmMain.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DVLD\\frmMain.cs [Design]",
+              "RelativeToolTip": "..\\DVLD\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T10:58:07.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmListDrivers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DVLD\\Drivers\\frmListDrivers.cs",
+              "RelativeDocumentMoniker": "..\\DVLD\\Drivers\\frmListDrivers.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DVLD\\Drivers\\frmListDrivers.cs [Design]",
+              "RelativeToolTip": "..\\DVLD\\Drivers\\frmListDrivers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T11:24:18.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmListLocalDrivingLicesnseApplications.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DVLD\\Applications\\Local Driving License\\frmListLocalDrivingLicesnseApplications.cs",
+              "RelativeDocumentMoniker": "..\\DVLD\\Applications\\Local Driving License\\frmListLocalDrivingLicesnseApplications.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DVLD\\Applications\\Local Driving License\\frmListLocalDrivingLicesnseApplications.cs [Design]",
+              "RelativeToolTip": "..\\DVLD\\Applications\\Local Driving License\\frmListLocalDrivingLicesnseApplications.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T11:22:50.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmListPeople.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DVLD\\People\\frmListPeople.cs",
+              "RelativeDocumentMoniker": "..\\DVLD\\People\\frmListPeople.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DVLD\\People\\frmListPeople.cs [Design]",
+              "RelativeToolTip": "..\\DVLD\\People\\frmListPeople.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T10:34:37.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmRenewLocalDrivingLicenseApplication.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DVLD\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs",
+              "RelativeDocumentMoniker": "..\\DVLD\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DVLD\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs [Design]",
+              "RelativeToolTip": "..\\DVLD\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T10:33:13.506Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

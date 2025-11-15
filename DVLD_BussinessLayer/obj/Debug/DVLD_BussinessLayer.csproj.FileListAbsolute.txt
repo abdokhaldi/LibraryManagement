@@ -1,0 +1,9 @@
+C:\Users\Hp\source\repos\DVLD_BussinessLayer\bin\Debug\DVLD_BussinessLayer.dll
+C:\Users\Hp\source\repos\DVLD_BussinessLayer\bin\Debug\DVLD_BussinessLayer.pdb
+C:\Users\Hp\source\repos\DVLD_BussinessLayer\bin\Debug\DVLD_DataAccess.dll
+C:\Users\Hp\source\repos\DVLD_BussinessLayer\bin\Debug\DVLD_DataAccess.pdb
+C:\Users\Hp\source\repos\DVLD_BussinessLayer\obj\Debug\DVLD_BussinessLayer.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\DVLD_BussinessLayer\obj\Debug\DVLD_BussinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\DVLD_BussinessLayer\obj\Debug\DVLD_Bus.5EE3EBF5.Up2Date
+C:\Users\Hp\source\repos\DVLD_BussinessLayer\obj\Debug\DVLD_BussinessLayer.dll
+C:\Users\Hp\source\repos\DVLD_BussinessLayer\obj\Debug\DVLD_BussinessLayer.pdb

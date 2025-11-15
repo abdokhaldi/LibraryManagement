@@ -1,0 +1,8 @@
+C:\Users\Hp\source\repos\ReflectionPractice\bin\Debug\ReflectionPractice.exe.config
+C:\Users\Hp\source\repos\ReflectionPractice\bin\Debug\ReflectionPractice.exe
+C:\Users\Hp\source\repos\ReflectionPractice\bin\Debug\ReflectionPractice.pdb
+C:\Users\Hp\source\repos\ReflectionPractice\obj\Debug\ReflectionPractice.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\ReflectionPractice\obj\Debug\ReflectionPractice.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\ReflectionPractice\obj\Debug\ReflectionPractice.exe
+C:\Users\Hp\source\repos\ReflectionPractice\obj\Debug\ReflectionPractice.pdb
+C:\Users\Hp\source\repos\ReflectionPractice\obj\Debug\ReflectionPractice.exe.config

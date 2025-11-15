@@ -1,0 +1,357 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\LibraryManagement_ConsoleApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AA6F338-5F05-4B81-BBC9-86826FAFD3EF}|LibraryManagement_ConsoleApp.csproj|C:\\Users\\Hp\\source\\repos\\LibraryManagement_ConsoleApp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AA6F338-5F05-4B81-BBC9-86826FAFD3EF}|LibraryManagement_ConsoleApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\strcurrentuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9620B8A2-AB38-4DEB-BE0F-86AF39663E5A}|..\\DTO_LibraryManagement\\DTO_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dto_librarymanagement\\currentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9620B8A2-AB38-4DEB-BE0F-86AF39663E5A}|..\\DTO_LibraryManagement\\DTO_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dto_librarymanagement\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9620B8A2-AB38-4DEB-BE0F-86AF39663E5A}|..\\DTO_LibraryManagement\\DTO_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dto_librarymanagement\\borrowingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9620B8A2-AB38-4DEB-BE0F-86AF39663E5A}|..\\DTO_LibraryManagement\\DTO_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dto_librarymanagement\\memberdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9620B8A2-AB38-4DEB-BE0F-86AF39663E5A}|..\\DTO_LibraryManagement\\DTO_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dto_librarymanagement\\operationresultbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9620B8A2-AB38-4DEB-BE0F-86AF39663E5A}|..\\DTO_LibraryManagement\\DTO_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dto_librarymanagement\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\operationresultbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\borrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\LibraryManagement_ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\LibraryManagement_ConsoleApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB4AAADAMjMzMzMswCEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T19:08:40.423Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EncryptionHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\EncryptionHelper.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\EncryptionHelper.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\EncryptionHelper.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\EncryptionHelper.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T12:31:33.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "strCurrentUserInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\strCurrentUserInfo.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\strCurrentUserInfo.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\strCurrentUserInfo.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\strCurrentUserInfo.cs",
+              "ViewState": "AgIAABgAAADAzMzMzMwpwB8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T11:59:09.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CurrentUser.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\CurrentUser.cs",
+              "RelativeDocumentMoniker": "..\\DTO_LibraryManagement\\CurrentUser.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\CurrentUser.cs",
+              "RelativeToolTip": "..\\DTO_LibraryManagement\\CurrentUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T11:07:40.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\BookDTO.cs",
+              "RelativeDocumentMoniker": "..\\DTO_LibraryManagement\\BookDTO.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\BookDTO.cs",
+              "RelativeToolTip": "..\\DTO_LibraryManagement\\BookDTO.cs",
+              "ViewState": "AgIAAA0AAAAAMzMzMzMDwAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T21:41:29.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MemberDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\MemberDTO.cs",
+              "RelativeDocumentMoniker": "..\\DTO_LibraryManagement\\MemberDTO.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\MemberDTO.cs",
+              "RelativeToolTip": "..\\DTO_LibraryManagement\\MemberDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T21:41:25.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SqlHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\SqlHelper.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\SqlHelper.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\SqlHelper.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\SqlHelper.cs",
+              "ViewState": "AgIAAFAAAAAAMzMzMzMrwFcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T21:33:53.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OperationResultBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\OperationResultBLL.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\OperationResultBLL.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\OperationResultBLL.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\OperationResultBLL.cs",
+              "ViewState": "AgIAAAUAAABAAAAAAAAmwA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T21:17:55.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\UserRepository.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\UserRepository.cs",
+              "ViewState": "AgIAAHYAAABAAAAAAAAqwIEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T18:27:34.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\RoleRepository.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\RoleRepository.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\RoleRepository.cs",
+              "ViewState": "AgIAAAsAAACAZmZmZmYswA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T15:41:00.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RoleDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\RoleDTO.cs",
+              "RelativeDocumentMoniker": "..\\DTO_LibraryManagement\\RoleDTO.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\RoleDTO.cs",
+              "RelativeToolTip": "..\\DTO_LibraryManagement\\RoleDTO.cs",
+              "ViewState": "AgIAAAAAAABoZmZmZmYkwAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T15:08:21.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OperationResultBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\OperationResultBLL.cs",
+              "RelativeDocumentMoniker": "..\\DTO_LibraryManagement\\OperationResultBLL.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\OperationResultBLL.cs",
+              "RelativeToolTip": "..\\DTO_LibraryManagement\\OperationResultBLL.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvwwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T14:05:32.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\RoleService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\RoleService.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\RoleService.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAMzMzMzMdwCEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T12:20:14.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\UserService.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\UserService.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\UserService.cs",
+              "ViewState": "AgIAAIMAAACAzMzMzMwqwIMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T12:13:37.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\PersonRepository.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\PersonRepository.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\PersonRepository.cs",
+              "ViewState": "AgIAAAcAAAAAMzMzMzMrwE4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T15:50:00.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\BookRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\BookRepository.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\BookRepository.cs",
+              "ViewState": "AgIAADQAAABAMzMzMzMXwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T18:36:46.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\PersonService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\PersonService.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\PersonService.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\PersonService.cs",
+              "ViewState": "AgIAAF8AAAAAMDMzMzPzv1sAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T23:59:21.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\BookService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\BookService.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\BookService.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\BookService.cs",
+              "ViewState": "AgIAAFcAAAAAgJmZmZnJv14AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T23:39:15.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MemberService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\MemberService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\MemberService.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\MemberService.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\MemberService.cs",
+              "ViewState": "AgIAADYAAACAmZmZmZkJwEoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T22:55:29.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BorrowingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\BorrowingRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\BorrowingRepository.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\BorrowingRepository.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\BorrowingRepository.cs",
+              "ViewState": "AgIAAHYAAAAAzszMzMwYwCAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T20:36:53.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BorrowingService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\BorrowingService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\BorrowingService.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\BorrowingService.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\BorrowingService.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAKIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T20:35:54.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BorrowingDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\BorrowingDTO.cs",
+              "RelativeDocumentMoniker": "..\\DTO_LibraryManagement\\BorrowingDTO.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\BorrowingDTO.cs",
+              "RelativeToolTip": "..\\DTO_LibraryManagement\\BorrowingDTO.cs",
+              "ViewState": "AgIAAAgAAADAzMzMzMwowAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T19:05:57.016Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\LibraryManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B1A2DD5-51D3-4A4E-A267-E08AFDEB0093}|LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\librarymanagement\\frmmainhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6B1A2DD5-51D3-4A4E-A267-E08AFDEB0093}|LibraryManagement.csproj|solutionrelative:frmmainhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 158,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\Class1.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\Class1.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T15:14:04.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\Class1.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\Class1.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T15:13:12.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMainHome.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\LibraryManagement\\frmMainHome.cs",
+              "RelativeDocumentMoniker": "frmMainHome.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\LibraryManagement\\frmMainHome.cs [Design]",
+              "RelativeToolTip": "frmMainHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T14:51:54.301Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

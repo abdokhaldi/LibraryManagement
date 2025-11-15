@@ -1,0 +1,7 @@
+C:\Users\Hp\source\repos\practice_delegate_LogerExample\bin\Debug\practice_delegate_LogerExample.exe.config
+C:\Users\Hp\source\repos\practice_delegate_LogerExample\bin\Debug\practice_delegate_LogerExample.exe
+C:\Users\Hp\source\repos\practice_delegate_LogerExample\bin\Debug\practice_delegate_LogerExample.pdb
+C:\Users\Hp\source\repos\practice_delegate_LogerExample\obj\Debug\practice_delegate_LogerExample.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\practice_delegate_LogerExample\obj\Debug\practice_delegate_LogerExample.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\practice_delegate_LogerExample\obj\Debug\practice_delegate_LogerExample.exe
+C:\Users\Hp\source\repos\practice_delegate_LogerExample\obj\Debug\practice_delegate_LogerExample.pdb

@@ -1,0 +1,8 @@
+C:\Users\Hp\source\repos\NewOrderEvent\bin\Debug\NewOrderEvent.exe.config
+C:\Users\Hp\source\repos\NewOrderEvent\bin\Debug\NewOrderEvent.exe
+C:\Users\Hp\source\repos\NewOrderEvent\bin\Debug\NewOrderEvent.pdb
+C:\Users\Hp\source\repos\NewOrderEvent\obj\Debug\NewOrderEvent.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\NewOrderEvent\obj\Debug\NewOrderEvent.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\NewOrderEvent\obj\Debug\NewOrderEvent.exe
+C:\Users\Hp\source\repos\NewOrderEvent\obj\Debug\NewOrderEvent.pdb
+C:\Users\Hp\source\repos\NewOrderEvent\obj\Debug\NewOrderEvent.exe.config

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PL_LibraryManagement</RootNamespace>
+    <AssemblyName>PL_LibraryManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>latest</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Books\ctrAddEditBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Books\ctrAddEditBook.Designer.cs">
+      <DependentUpon>ctrAddEditBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Books\ctrBookCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Books\ctrBookCard.Designer.cs">
+      <DependentUpon>ctrBookCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrowings\ctrManageBorrowings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Borrowings\ctrManageBorrowings.Designer.cs">
+      <DependentUpon>ctrManageBorrowings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\BorrowingManager.cs" />
+    <Compile Include="Managers\UsersManager.cs" />
+    <Compile Include="Users\Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserControls\ctrAddUpdateUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\UserControls\ctrAddUpdateUser.Designer.cs">
+      <DependentUpon>ctrAddUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserControls\ctrLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\UserControls\ctrLogin.Designer.cs">
+      <DependentUpon>ctrLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\ctrDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashBoard\ctrDashboard.Designer.cs">
+      <DependentUpon>ctrDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\ctrRecentActivities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashBoard\ctrRecentActivities.Designer.cs">
+      <DependentUpon>ctrRecentActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\BookManager.cs" />
+    <Compile Include="Managers\DashboardManager.cs" />
+    <Compile Include="Managers\ManagerHelper.cs" />
+    <Compile Include="People\Forms\frmPersonCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\Forms\frmPersonCard.Designer.cs">
+      <DependentUpon>frmPersonCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\UserControls\ctrAddEditPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\UserControls\ctrAddEditPerson.Designer.cs">
+      <DependentUpon>ctrAddEditPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Books\ctrBooksList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Books\ctrBooksList.Designer.cs">
+      <DependentUpon>ctrBooksList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\UserControls\ctrPeopleList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\UserControls\ctrPeopleList.Designer.cs">
+      <DependentUpon>ctrPeopleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\UserControls\ctrPersonCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\UserControls\ctrPersonCard.Designer.cs">
+      <DependentUpon>ctrPersonCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringValidation.cs" />
+    <Compile Include="UI_Theme\AppColors.cs" />
+    <Compile Include="UI_Theme\AppFounts.cs" />
+    <Compile Include="UI_Theme\CardPosition.cs" />
+    <Compile Include="UI_Theme\CustomGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI_Theme\PanelState.cs" />
+    <Compile Include="Managers\PeopleManager.cs" />
+    <Compile Include="UI_Theme\UIConfigurator.cs" />
+    <Compile Include="Users\UserControls\ctrUserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\UserControls\ctrUserCard.Designer.cs">
+      <DependentUpon>ctrUserCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserControls\ctrUsersList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\UserControls\ctrUsersList.Designer.cs">
+      <DependentUpon>ctrUsersList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Books\ctrAddEditBook.resx">
+      <DependentUpon>ctrAddEditBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\ctrBookCard.resx">
+      <DependentUpon>ctrBookCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrowings\ctrManageBorrowings.resx">
+      <DependentUpon>ctrManageBorrowings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserControls\ctrAddUpdateUser.resx">
+      <DependentUpon>ctrAddUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserControls\ctrLogin.resx">
+      <DependentUpon>ctrLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard\ctrDashboard.resx">
+      <DependentUpon>ctrDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard\ctrRecentActivities.resx">
+      <DependentUpon>ctrRecentActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\Forms\frmPersonCard.resx">
+      <DependentUpon>frmPersonCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\UserControls\ctrAddEditPerson.resx">
+      <DependentUpon>ctrAddEditPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\ctrBooksList.resx">
+      <DependentUpon>ctrBooksList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\UserControls\ctrPeopleList.resx">
+      <DependentUpon>ctrPeopleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\UserControls\ctrPersonCard.resx">
+      <DependentUpon>ctrPersonCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Users\UserControls\ctrUserCard.resx">
+      <DependentUpon>ctrUserCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserControls\ctrUsersList.resx">
+      <DependentUpon>ctrUsersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL_LibraryManagement\BLL_LibraryManagement.csproj">
+      <Project>{a6b94ce0-b3b5-4596-a455-553a2a434034}</Project>
+      <Name>BLL_LibraryManagement</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\members %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesman %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesman %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesman %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesman %284%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,5 @@
+﻿Build started at 12:11...
+1>------ Build started: Project: LibraryManagement_ConsoleApp, Configuration: Debug Any CPU ------
+1>  LibraryManagement_ConsoleApp -> C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\bin\Debug\LibraryManagement_ConsoleApp.exe
+========== Build: 1 succeeded, 0 failed, 2 up-to-date, 0 skipped ==========
+========== Build completed at 12:11 and took 00.494 seconds ==========

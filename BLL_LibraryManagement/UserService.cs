@@ -1,0 +1,196 @@
+﻿using DAL_LibraryManagement;
+using DTO_LibraryManagement;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace BLL_LibraryManagement
+{
+    public class UserService
+    {
+        private enum Mode { AddNew=1,Update=2}
+        public int UserID { get; set; }
+        public int PersonID { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public bool IsActive { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public int RoleID { get; set; }
+        public RoleService RoleInfo = null;
+        
+        private PersonService PersonInfo =null;
+        public string FullName { get; set; }
+        public string Phone { get;set; }
+        public string Email { get; set; }
+        public string RoleName { get; set; }
+
+        private Mode _Mode = Mode.AddNew;
+        
+
+        private UserService(int userID, int personID,  string username, 
+                     string password, int roleID, bool isActive,DateTime createdAt)
+        {
+            UserID = userID;
+            PersonID = personID;
+            Username = username;
+            Password = password;
+            RoleID = roleID;
+            IsActive = isActive;
+            CreatedAt = createdAt;
+            RoleInfo = RoleService.GetRoleByID(RoleID);
+            PersonInfo = PersonService.FindPersonByID(PersonID);
+            FullName = PersonInfo.FullName;
+            Phone = PersonInfo.Phone;
+            Email = PersonInfo.Email;
+            RoleName = RoleInfo.RoleName;
+            _Mode = Mode.Update;
+
+        }
+        public UserService()
+        {
+            UserID = 0;
+            PersonID = 0;
+            Username = "";
+            Password = "";
+            RoleID = 0;
+            IsActive = true;
+            CreatedAt = DateTime.Now;
+            _Mode = Mode.AddNew;
+            RoleInfo = null;
+            PersonInfo = null;
+            FullName = string.Empty;
+            Phone = string.Empty;
+            Email = string.Empty;
+         }
+        private UserService(UserDTO user)
+        {
+            UserID = user.UserID;
+            PersonID = user.PersonID;
+            Username = user.Username;
+            RoleID = user.RoleID;
+            IsActive = user.IsActive;
+            CreatedAt = user.CreatedAt;
+        }
+
+
+        public static UserService GetUserByID(int ID)
+        {
+            var dto = UserRepository.GetUserByID(ID);
+            return new UserService(dto.UserID,dto.PersonID,dto.Username,dto.Password,dto.RoleID,dto.IsActive,dto.CreatedAt);
+        }
+        
+        public static List<UserService> GetAllUsers()
+        {
+            var usersList = UserRepository.GetAllUsers();
+            
+            if (usersList == null)  return null;
+
+            var users = usersList.Select(
+                u => new UserService(u.UserID, u.PersonID, u.Username, u.Password, u.RoleID, u.IsActive,u.CreatedAt)
+                ).ToList();
+
+            return users;
+        }
+        public static bool IsUsernameExists(string username)
+        {
+            var result = UserRepository.IsUsernameExists(username);
+            if (result == null)
+                return false;
+
+            return true;
+        }
+        private UserDTO _FillObjectToTransfer()
+        {
+            return new UserDTO
+            {
+                UserID = UserID,
+                PersonID = PersonID,
+                Username = Username,
+                Password = Password,
+                RoleID = RoleID,
+                IsActive = IsActive,
+                CreatedAt = CreatedAt,
+            };
+        }
+        private bool _AddNewUser()
+        {
+            var userDTO = _FillObjectToTransfer();
+            /// ADD user  and return  newUserID
+            if (userDTO != null) { 
+                UserID = UserRepository.AddNewUser(userDTO);
+               }
+
+        return (UserID > 0);
+        }
+
+        private bool _UpdateUser()
+        {
+            var userDTO = _FillObjectToTransfer();
+            
+            int rowsAffected = UserRepository.UpdateUser(userDTO);
+               return (rowsAffected > 0);
+           
+        }
+
+        public OperationResultBLL Save()
+        {
+            if (_Mode==Mode.AddNew || _Mode == Mode.Update)
+            {
+                if (!string.IsNullOrEmpty(this.Password))
+                {
+                    this.Password = SecurityService.HashPassword(Password);
+                }
+            }
+            
+          switch (_Mode)
+            {
+                case Mode.AddNew:
+
+                if (_AddNewUser())
+            {
+                _Mode = Mode.Update;
+                return  OperationResultBLL.Ok("User has been added successfully .");
+                    }
+                    else
+                    {
+                        return OperationResultBLL.Fail("User cannot be Added !");
+                    }
+                    
+                case Mode.Update:
+                    if (!_UpdateUser())
+                        return OperationResultBLL.Fail("User cannot be updated !");
+                    return OperationResultBLL.Ok("User updated successfully.");
+              }
+            return OperationResultBLL.Fail();
+          }
+       
+        public static bool DesactiveUser(int userID)
+        {
+            int rowsAffected = UserRepository.SetUserActiveStatus(userID,false);
+            return (rowsAffected > 0);
+        }
+        public static bool ActivateUser(int userID)
+        {
+            int rowsAffected = UserRepository.SetUserActiveStatus(userID, true);
+            return (rowsAffected > 0);
+        }
+
+        public static OperationResultBLL Login(string username, string enteredPassword)
+        {
+            var userDTO = UserRepository.GetUserByUsername(username);
+            if (userDTO == null) return OperationResultBLL.Fail("User not exists!");
+            if(!userDTO.IsActive)
+                return OperationResultBLL.Fail("Your account is currently inactive. Please contact administration.");
+
+            string storedHash = userDTO.Password;
+            if (SecurityService.VerifyPassword(enteredPassword,storedHash))
+            {
+                CurrentUser.SetUser(userDTO);
+                return OperationResultBLL.Ok("Login successful .");
+            }
+            return OperationResultBLL.Fail("Password not correct !");
+        }
+      }
+
+    }
+

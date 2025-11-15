@@ -1,0 +1,15 @@
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\bin\Debug\LibraryManagement_ConsoleApp.exe.config
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\bin\Debug\LibraryManagement_ConsoleApp.exe
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\bin\Debug\LibraryManagement_ConsoleApp.pdb
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\obj\Debug\LibraryManagement_ConsoleApp.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\obj\Debug\LibraryManagement_ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\obj\Debug\LibraryManagement_ConsoleApp.exe
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\obj\Debug\LibraryManagement_ConsoleApp.pdb
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\bin\Debug\BLL_LibraryManagement.dll
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\bin\Debug\DAL_LibraryManagement.dll
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\bin\Debug\BLL_LibraryManagement.pdb
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\bin\Debug\DAL_LibraryManagement.pdb
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\obj\Debug\LibraryManagement_ConsoleApp.exe.config
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\obj\Debug\LibraryM.04014CD3.Up2Date
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\bin\Debug\DTO_LibraryManagement.dll
+C:\Users\Hp\source\repos\LibraryManagement_ConsoleApp\bin\Debug\DTO_LibraryManagement.pdb

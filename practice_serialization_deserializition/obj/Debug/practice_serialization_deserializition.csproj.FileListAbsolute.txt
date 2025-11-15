@@ -1,0 +1,7 @@
+C:\Users\Hp\source\repos\practice_serialization_deserializition\bin\Debug\practice_serialization_deserializition.exe.config
+C:\Users\Hp\source\repos\practice_serialization_deserializition\bin\Debug\practice_serialization_deserializition.exe
+C:\Users\Hp\source\repos\practice_serialization_deserializition\bin\Debug\practice_serialization_deserializition.pdb
+C:\Users\Hp\source\repos\practice_serialization_deserializition\obj\Debug\practice_serialization_deserializition.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\practice_serialization_deserializition\obj\Debug\practice_serialization_deserializition.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\practice_serialization_deserializition\obj\Debug\practice_serialization_deserializition.exe
+C:\Users\Hp\source\repos\practice_serialization_deserializition\obj\Debug\practice_serialization_deserializition.pdb

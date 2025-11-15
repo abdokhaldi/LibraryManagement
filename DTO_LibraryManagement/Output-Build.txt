@@ -1,0 +1,5 @@
+﻿Build started at 23:59...
+1>------ Build started: Project: PL_LibraryManagement, Configuration: Debug Any CPU ------
+1>  PL_LibraryManagement -> C:\Users\Hp\source\repos\PL_LibraryManagement\bin\Debug\PL_LibraryManagement.exe
+========== Build: 1 succeeded, 0 failed, 3 up-to-date, 0 skipped ==========
+========== Build completed at 23:59 and took 00.761 seconds ==========

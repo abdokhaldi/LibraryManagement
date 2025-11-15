@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\practice_delegate_LogerExample\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A29DF4-34EC-4620-9DFE-F8ACA886CC50}|practice_delegate_LogerExample.csproj|C:\\Users\\Hp\\source\\repos\\practice_delegate_LogerExample\\app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A29DF4-34EC-4620-9DFE-F8ACA886CC50}|practice_delegate_LogerExample.csproj|solutionrelative:app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A29DF4-34EC-4620-9DFE-F8ACA886CC50}|practice_delegate_LogerExample.csproj|C:\\Users\\Hp\\source\\repos\\practice_delegate_LogerExample\\core\\loger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A29DF4-34EC-4620-9DFE-F8ACA886CC50}|practice_delegate_LogerExample.csproj|solutionrelative:core\\loger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A29DF4-34EC-4620-9DFE-F8ACA886CC50}|practice_delegate_LogerExample.csproj|c:\\users\\hp\\source\\repos\\practice_delegate_logerexample\\functions\\logfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A29DF4-34EC-4620-9DFE-F8ACA886CC50}|practice_delegate_LogerExample.csproj|solutionrelative:functions\\logfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 156,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LogFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\practice_delegate_LogerExample\\Functions\\LogFunctions.cs",
+              "RelativeDocumentMoniker": "Functions\\LogFunctions.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\practice_delegate_LogerExample\\Functions\\LogFunctions.cs",
+              "RelativeToolTip": "Functions\\LogFunctions.cs",
+              "ViewState": "AgIAABEAAACAZmZmZmY5wBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T01:04:43.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Loger.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\practice_delegate_LogerExample\\Core\\Loger.cs",
+              "RelativeDocumentMoniker": "Core\\Loger.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\practice_delegate_LogerExample\\Core\\Loger.cs",
+              "RelativeToolTip": "Core\\Loger.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T23:44:48.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\practice_delegate_LogerExample\\App\\Program.cs",
+              "RelativeDocumentMoniker": "App\\Program.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\practice_delegate_LogerExample\\App\\Program.cs",
+              "RelativeToolTip": "App\\Program.cs",
+              "ViewState": "AgIAABIAAABAMzMzMzMLwBAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T23:42:17.008Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

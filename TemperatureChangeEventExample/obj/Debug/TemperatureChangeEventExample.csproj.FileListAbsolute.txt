@@ -1,0 +1,8 @@
+C:\Users\Hp\source\repos\TemperatureChangeEventExample\bin\Debug\TemperatureChangeEventExample.exe.config
+C:\Users\Hp\source\repos\TemperatureChangeEventExample\bin\Debug\TemperatureChangeEventExample.exe
+C:\Users\Hp\source\repos\TemperatureChangeEventExample\bin\Debug\TemperatureChangeEventExample.pdb
+C:\Users\Hp\source\repos\TemperatureChangeEventExample\obj\Debug\TemperatureChangeEventExample.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\TemperatureChangeEventExample\obj\Debug\TemperatureChangeEventExample.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\TemperatureChangeEventExample\obj\Debug\TemperatureChangeEventExample.exe
+C:\Users\Hp\source\repos\TemperatureChangeEventExample\obj\Debug\TemperatureChangeEventExample.pdb
+C:\Users\Hp\source\repos\TemperatureChangeEventExample\obj\Debug\TemperatureChangeEventExample.exe.config

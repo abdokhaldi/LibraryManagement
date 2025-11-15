@@ -1,0 +1,20 @@
+C:\Users\wael\source\repos\DVLD Project\bin\Debug\DVLD Project.exe.config
+C:\Users\wael\source\repos\DVLD Project\bin\Debug\DVLD Project.exe
+C:\Users\wael\source\repos\DVLD Project\bin\Debug\DVLD Project.pdb
+C:\Users\wael\source\repos\DVLD Project\obj\Debug\DVLD Project.csproj.AssemblyReference.cache
+C:\Users\wael\source\repos\DVLD Project\obj\Debug\DVLD_Project.Form1.resources
+C:\Users\wael\source\repos\DVLD Project\obj\Debug\DVLD_Project.Properties.Resources.resources
+C:\Users\wael\source\repos\DVLD Project\obj\Debug\DVLD Project.csproj.GenerateResource.cache
+C:\Users\wael\source\repos\DVLD Project\obj\Debug\DVLD Project.csproj.CoreCompileInputs.cache
+C:\Users\wael\source\repos\DVLD Project\obj\Debug\DVLD Project.exe
+C:\Users\wael\source\repos\DVLD Project\obj\Debug\DVLD Project.pdb
+C:\Users\Hp\source\repos\DVLD_Project1\obj\Debug\DVLD Project.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\DVLD_Project1\obj\Debug\DVLD_Project.Form1.resources
+C:\Users\Hp\source\repos\DVLD_Project1\obj\Debug\DVLD_Project.People.Controls.ctrlPersonCard.resources
+C:\Users\Hp\source\repos\DVLD_Project1\obj\Debug\DVLD_Project.People.Controls.ctrlPersonCardWithFilter.resources
+C:\Users\Hp\source\repos\DVLD_Project1\obj\Debug\DVLD_Project.People.frmAddUpdatePerson.resources
+C:\Users\Hp\source\repos\DVLD_Project1\obj\Debug\DVLD_Project.Properties.Resources.resources
+C:\Users\Hp\source\repos\DVLD_Project1\obj\Debug\DVLD Project.csproj.GenerateResource.cache
+C:\Users\Hp\source\repos\DVLD_Project1\obj\Debug\DVLD Project.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\DVLD_Project1\obj\Debug\DVLD Project.exe
+C:\Users\Hp\source\repos\DVLD_Project1\obj\Debug\DVLD Project.pdb

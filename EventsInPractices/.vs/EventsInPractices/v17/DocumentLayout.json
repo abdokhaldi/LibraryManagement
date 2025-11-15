@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26B6B4CA-96B9-4C40-9331-50258B976B64}|EventsInPractices.csproj|c:\\users\\hp\\source\\repos\\eventsinpractices\\frmmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26B6B4CA-96B9-4C40-9331-50258B976B64}|EventsInPractices.csproj|solutionrelative:frmmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B6B4CA-96B9-4C40-9331-50258B976B64}|EventsInPractices.csproj|C:\\Users\\Hp\\source\\repos\\EventsInPractices\\frmmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{26B6B4CA-96B9-4C40-9331-50258B976B64}|EventsInPractices.csproj|solutionrelative:frmmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B6B4CA-96B9-4C40-9331-50258B976B64}|EventsInPractices.csproj|C:\\Users\\Hp\\source\\repos\\EventsInPractices\\usercontrols\\ctrsimpleeventwithparametersusingargument.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26B6B4CA-96B9-4C40-9331-50258B976B64}|EventsInPractices.csproj|solutionrelative:usercontrols\\ctrsimpleeventwithparametersusingargument.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B6B4CA-96B9-4C40-9331-50258B976B64}|EventsInPractices.csproj|C:\\Users\\Hp\\source\\repos\\EventsInPractices\\usercontrols\\ctrsimpleeventwithparametersusingargument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26B6B4CA-96B9-4C40-9331-50258B976B64}|EventsInPractices.csproj|solutionrelative:usercontrols\\ctrsimpleeventwithparametersusingargument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26B6B4CA-96B9-4C40-9331-50258B976B64}|EventsInPractices.csproj|C:\\Users\\Hp\\source\\repos\\EventsInPractices\\usercontrols\\ctrsimpleeventwithparametersusingargument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{26B6B4CA-96B9-4C40-9331-50258B976B64}|EventsInPractices.csproj|solutionrelative:usercontrols\\ctrsimpleeventwithparametersusingargument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\frmMainForm.cs",
+              "RelativeDocumentMoniker": "frmMainForm.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\frmMainForm.cs",
+              "RelativeToolTip": "frmMainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T02:49:57.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ctrSimpleEventWithParametersUsingArgument.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\UserControls\\ctrSimpleEventWithParametersUsingArgument.Designer.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrSimpleEventWithParametersUsingArgument.Designer.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\UserControls\\ctrSimpleEventWithParametersUsingArgument.Designer.cs",
+              "RelativeToolTip": "UserControls\\ctrSimpleEventWithParametersUsingArgument.Designer.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAowDAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T02:36:09.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ctrSimpleEventWithParametersUsingArgument.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\UserControls\\ctrSimpleEventWithParametersUsingArgument.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrSimpleEventWithParametersUsingArgument.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\UserControls\\ctrSimpleEventWithParametersUsingArgument.cs",
+              "RelativeToolTip": "UserControls\\ctrSimpleEventWithParametersUsingArgument.cs",
+              "ViewState": "AgIAACYAAABAAAAAAAAqwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T22:31:25.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ctrSimpleEventWithParametersUsingArgument.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\UserControls\\ctrSimpleEventWithParametersUsingArgument.cs",
+              "RelativeDocumentMoniker": "UserControls\\ctrSimpleEventWithParametersUsingArgument.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\UserControls\\ctrSimpleEventWithParametersUsingArgument.cs [Design]",
+              "RelativeToolTip": "UserControls\\ctrSimpleEventWithParametersUsingArgument.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T22:27:58.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\frmMainForm.cs",
+              "RelativeDocumentMoniker": "frmMainForm.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\EventsInPractices\\frmMainForm.cs [Design]",
+              "RelativeToolTip": "frmMainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T22:15:24.145Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
