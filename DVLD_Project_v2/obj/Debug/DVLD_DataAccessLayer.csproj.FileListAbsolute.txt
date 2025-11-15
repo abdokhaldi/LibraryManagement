@@ -1,2 +1,0 @@
-C:\Users\Hp\source\repos\DVLD_Project_v2\obj\Debug\DVLD_DataAccessLayer.csproj.AssemblyReference.cache
-C:\Users\Hp\source\repos\DVLD_Project_v2\obj\Debug\DVLD_DataAccessLayer.csproj.CoreCompileInputs.cache
