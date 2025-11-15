@@ -1,8 +1,0 @@
-C:\Users\Hp\source\repos\practiceAttributes\bin\Debug\practiceAttributes.exe.config
-C:\Users\Hp\source\repos\practiceAttributes\bin\Debug\practiceAttributes.exe
-C:\Users\Hp\source\repos\practiceAttributes\bin\Debug\practiceAttributes.pdb
-C:\Users\Hp\source\repos\practiceAttributes\obj\Debug\practiceAttributes.csproj.AssemblyReference.cache
-C:\Users\Hp\source\repos\practiceAttributes\obj\Debug\practiceAttributes.csproj.CoreCompileInputs.cache
-C:\Users\Hp\source\repos\practiceAttributes\obj\Debug\practiceAttributes.exe
-C:\Users\Hp\source\repos\practiceAttributes\obj\Debug\practiceAttributes.pdb
-C:\Users\Hp\source\repos\practiceAttributes\obj\Debug\practiceAttributes.exe.config

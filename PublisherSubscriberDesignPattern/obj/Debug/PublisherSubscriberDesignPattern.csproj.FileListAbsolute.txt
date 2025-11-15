@@ -1,8 +1,0 @@
-C:\Users\Hp\source\repos\PublisherSubscriberDesignPattern\bin\Debug\PublisherSubscriberDesignPattern.exe.config
-C:\Users\Hp\source\repos\PublisherSubscriberDesignPattern\bin\Debug\PublisherSubscriberDesignPattern.exe
-C:\Users\Hp\source\repos\PublisherSubscriberDesignPattern\bin\Debug\PublisherSubscriberDesignPattern.pdb
-C:\Users\Hp\source\repos\PublisherSubscriberDesignPattern\obj\Debug\PublisherSubscriberDesignPattern.csproj.AssemblyReference.cache
-C:\Users\Hp\source\repos\PublisherSubscriberDesignPattern\obj\Debug\PublisherSubscriberDesignPattern.csproj.CoreCompileInputs.cache
-C:\Users\Hp\source\repos\PublisherSubscriberDesignPattern\obj\Debug\PublisherSubscriberDesignPattern.exe
-C:\Users\Hp\source\repos\PublisherSubscriberDesignPattern\obj\Debug\PublisherSubscriberDesignPattern.pdb
-C:\Users\Hp\source\repos\PublisherSubscriberDesignPattern\obj\Debug\PublisherSubscriberDesignPattern.exe.config

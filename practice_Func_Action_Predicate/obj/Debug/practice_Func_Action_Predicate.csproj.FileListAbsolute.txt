@@ -1,7 +1,0 @@
-C:\Users\Hp\source\repos\practice_Func_Action_Predicate\bin\Debug\practice_Func_Action_Predicate.exe.config
-C:\Users\Hp\source\repos\practice_Func_Action_Predicate\bin\Debug\practice_Func_Action_Predicate.exe
-C:\Users\Hp\source\repos\practice_Func_Action_Predicate\bin\Debug\practice_Func_Action_Predicate.pdb
-C:\Users\Hp\source\repos\practice_Func_Action_Predicate\obj\Debug\practice_Func_Action_Predicate.csproj.AssemblyReference.cache
-C:\Users\Hp\source\repos\practice_Func_Action_Predicate\obj\Debug\practice_Func_Action_Predicate.csproj.CoreCompileInputs.cache
-C:\Users\Hp\source\repos\practice_Func_Action_Predicate\obj\Debug\practice_Func_Action_Predicate.exe
-C:\Users\Hp\source\repos\practice_Func_Action_Predicate\obj\Debug\practice_Func_Action_Predicate.pdb

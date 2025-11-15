@@ -1,8 +1,0 @@
-C:\Users\Hp\source\repos\PublisherSubscriberPatternWitBroker\bin\Debug\PublisherSubscriberPatternWitBroker.exe.config
-C:\Users\Hp\source\repos\PublisherSubscriberPatternWitBroker\bin\Debug\PublisherSubscriberPatternWitBroker.exe
-C:\Users\Hp\source\repos\PublisherSubscriberPatternWitBroker\bin\Debug\PublisherSubscriberPatternWitBroker.pdb
-C:\Users\Hp\source\repos\PublisherSubscriberPatternWitBroker\obj\Debug\PublisherSubscriberPatternWitBroker.csproj.AssemblyReference.cache
-C:\Users\Hp\source\repos\PublisherSubscriberPatternWitBroker\obj\Debug\PublisherSubscriberPatternWitBroker.csproj.CoreCompileInputs.cache
-C:\Users\Hp\source\repos\PublisherSubscriberPatternWitBroker\obj\Debug\PublisherSubscriberPatternWitBroker.exe
-C:\Users\Hp\source\repos\PublisherSubscriberPatternWitBroker\obj\Debug\PublisherSubscriberPatternWitBroker.pdb
-C:\Users\Hp\source\repos\PublisherSubscriberPatternWitBroker\obj\Debug\PublisherSubscriberPatternWitBroker.exe.config

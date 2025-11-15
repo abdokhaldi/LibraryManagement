@@ -1,8 +1,0 @@
-C:\Users\Hp\source\repos\RefleectionPractice_1\bin\Debug\RefleectionPractice_1.exe.config
-C:\Users\Hp\source\repos\RefleectionPractice_1\bin\Debug\RefleectionPractice_1.exe
-C:\Users\Hp\source\repos\RefleectionPractice_1\bin\Debug\RefleectionPractice_1.pdb
-C:\Users\Hp\source\repos\RefleectionPractice_1\obj\Debug\RefleectionPractice_1.csproj.AssemblyReference.cache
-C:\Users\Hp\source\repos\RefleectionPractice_1\obj\Debug\RefleectionPractice_1.csproj.CoreCompileInputs.cache
-C:\Users\Hp\source\repos\RefleectionPractice_1\obj\Debug\RefleectionPractice_1.exe
-C:\Users\Hp\source\repos\RefleectionPractice_1\obj\Debug\RefleectionPractice_1.pdb
-C:\Users\Hp\source\repos\RefleectionPractice_1\obj\Debug\RefleectionPractice_1.exe.config

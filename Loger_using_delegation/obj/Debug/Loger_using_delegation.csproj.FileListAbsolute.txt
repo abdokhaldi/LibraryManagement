@@ -1,8 +1,0 @@
-C:\Users\Hp\source\repos\Loger_using_delegation\bin\Debug\Loger_using_delegation.exe.config
-C:\Users\Hp\source\repos\Loger_using_delegation\bin\Debug\Loger_using_delegation.exe
-C:\Users\Hp\source\repos\Loger_using_delegation\bin\Debug\Loger_using_delegation.pdb
-C:\Users\Hp\source\repos\Loger_using_delegation\obj\Debug\Loger_using_delegation.csproj.AssemblyReference.cache
-C:\Users\Hp\source\repos\Loger_using_delegation\obj\Debug\Loger_using_delegation.csproj.CoreCompileInputs.cache
-C:\Users\Hp\source\repos\Loger_using_delegation\obj\Debug\Loger_using_delegation.exe
-C:\Users\Hp\source\repos\Loger_using_delegation\obj\Debug\Loger_using_delegation.pdb
-C:\Users\Hp\source\repos\Loger_using_delegation\obj\Debug\Loger_using_delegation.exe.config
