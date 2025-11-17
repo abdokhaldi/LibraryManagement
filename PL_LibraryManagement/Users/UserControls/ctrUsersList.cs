@@ -36,7 +36,7 @@ namespace PL_LibraryManagement.Users.UserControls
                 ["IsActive"] = ("Is Active", 100),
                 ["CreatedAt20"] = ("Join Date", 0),
             };
-            UIConfigurator._CreateColumns(dgvUsers,columns);
+            UIConfigurator.CreateColumns(dgvUsers,columns);
         }
         public void ReloadInfo()
         {
@@ -50,6 +50,20 @@ namespace PL_LibraryManagement.Users.UserControls
                
             CreateColumns();
             dgvUsers.DataSource = users ;
+            dgvUsers.CellFormatting += FormattingDataGridValue;
+        }
+        private void FormattingDataGridValue(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+
+            if (dgvUsers.Columns[e.ColumnIndex].DataPropertyName == "IsActive")
+            {
+                if (e.Value is bool value)
+                {
+                    e.Value = value ? "Yes" : "No";
+
+                    e.FormattingApplied = true;
+                }
+            }
         }
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)

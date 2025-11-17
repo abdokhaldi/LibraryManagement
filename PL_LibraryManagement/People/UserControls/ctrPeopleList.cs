@@ -57,7 +57,7 @@ namespace PL_LibraryManagement.People.UserControls
                     ["IsActive"] = ("Is Active", 90),
                 };
 
-               UIConfigurator._CreateColumns(dgvPeople, columns);
+               UIConfigurator.CreateColumns(dgvPeople, columns);
             }
          }
 

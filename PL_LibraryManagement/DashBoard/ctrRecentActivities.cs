@@ -34,7 +34,7 @@ namespace PL_LibraryManagement.DashBoard
                     ["EntityID"]    = ("Entity ID", 100),
                 };
             
-            UIConfigurator._CreateColumns(dgvRecentActivities, columns);
+            UIConfigurator.CreateColumns(dgvRecentActivities, columns);
         }
      }
         

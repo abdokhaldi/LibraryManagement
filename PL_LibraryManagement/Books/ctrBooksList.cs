@@ -58,7 +58,7 @@ namespace PL_LibraryManagement.People.UserControls
                     ["IsActive"] = ("Active", 100)
                    };
 
-                UIConfigurator._CreateColumns(dgvBooks, columns);
+                UIConfigurator.CreateColumns(dgvBooks, columns);
             }
         }
 
@@ -80,10 +80,23 @@ namespace PL_LibraryManagement.People.UserControls
 
             dgvBooks.DataSource = _booksList;
 
-           // dgvBooks.CellFormatting += FormattingDataGridValue;
+            dgvBooks.CellFormatting += FormattingDataGridValue;
+        }
+        private void FormattingDataGridValue(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+
+            if (dgvBooks.Columns[e.ColumnIndex].DataPropertyName == "IsActive")
+            {
+                if (e.Value is bool value)
+                {
+                    e.Value = value ? "Yes" : "No";
+
+                    e.FormattingApplied = true;
+                }
+            }
         }
 
-        
+
         private bool AutoFilterSearchBy(string query, string value)
         {
             return (value != null && value.IndexOf(query, StringComparison.OrdinalIgnoreCase) >= 0);
