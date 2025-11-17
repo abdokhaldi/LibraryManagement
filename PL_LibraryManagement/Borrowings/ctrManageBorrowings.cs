@@ -22,11 +22,26 @@ namespace PL_LibraryManagement.Borrowings
             LoadBorrowings();
 
         }
+        private void CreateColumns()
+        {
 
+            var columns = new Dictionary<string, (string, int)>
+            {
+                ["BorrowingID"] = ("Borrowing ID",150),
+                ["Title70"] = ("Title",0),
+                ["FullName30"] = ("Full Name",0),
+                ["BorrowingDate"] = ("Borrowing Date",150),
+                ["DueDate"] = ("Due Date",150),
+               // ["ReturnDate"] = ("Return Date",150),
+                ["Status"] = ("Status",100),
+            };
+            UIConfigurator.CreateColumns(dgvBorrowings,columns);
+        }
      private void LoadBorrowings()
         {
-            dgvBorrowings.Columns.Clear();
 
+            dgvBorrowings.Columns.Clear();
+            CreateColumns();
             dgvBorrowings.DataSource = BorrowingInfoService.GetAllBorrowingsInfo(); 
 
         }
