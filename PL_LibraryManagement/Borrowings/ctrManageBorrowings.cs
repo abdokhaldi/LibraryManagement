@@ -42,8 +42,7 @@ namespace PL_LibraryManagement.Borrowings
                 UIConfigurator.CreateColumns(dgvBorrowings, columns);
             }
         }
-
-     private void LoadBorrowings()
+        private void LoadBorrowings()
         {
             
             dgvBorrowings.Dock = DockStyle.Fill;
@@ -54,7 +53,10 @@ namespace PL_LibraryManagement.Borrowings
 
         }
 
-
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmBorrowScrean borrowScreen = new frmBorrowScrean();
+            borrowScreen.Show();
+        }
     }
 }

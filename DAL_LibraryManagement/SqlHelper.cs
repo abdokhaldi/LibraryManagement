@@ -39,6 +39,28 @@ namespace DAL_LibraryManagement
            
             return cmd.ExecuteReader(CommandBehavior.CloseConnection);
         }
+        public static SqlDataReader ExecuteReaderWildCard(string query, CommandType commandType, Dictionary<string, (SqlDbType, object, int?)> parameters)
+        {
+            var conn = new SqlConnection(connectionString);
+            conn.Open();
+            var cmd = new SqlCommand(query, conn);
+            cmd.CommandType = commandType;
+
+            if (parameters != null)
+            {
+                foreach (var p in parameters)
+                {
+                    var param = cmd.Parameters.Add(p.Key, p.Value.Item1);
+                    if (p.Value.Item3.HasValue)
+                    {
+                        param.Size = p.Value.Item3.Value;
+                    }
+                    param.Value = "%" +p.Value.Item2+"%";
+                }
+            }
+
+            return cmd.ExecuteReader(CommandBehavior.CloseConnection);
+        }
 
         public static object ExecuteCommand(string query,CommandType commandType, ExecuteType executeType,Dictionary<string,(SqlDbType,object,int?)> parameters)
         {

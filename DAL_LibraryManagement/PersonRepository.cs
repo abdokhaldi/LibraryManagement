@@ -12,8 +12,7 @@ namespace DAL_LibraryManagement
 {
     public class PersonRepository
     {
-
-        static public List<PersonDTO> GetAllPeople()
+         public static List<PersonDTO> GetAllPeople()
         {
             var listOfPeople = new List<PersonDTO>();
 
