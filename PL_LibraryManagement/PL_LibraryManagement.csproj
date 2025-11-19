@@ -60,6 +60,12 @@
     <Compile Include="Books\ctrBookCard.Designer.cs">
       <DependentUpon>ctrBookCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Borrowings\ctrBookLookUP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Borrowings\ctrBookLookUP.Designer.cs">
+      <DependentUpon>ctrBookLookUP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Borrowings\ctrBorrowControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Books\ctrBookCard.resx">
       <DependentUpon>ctrBookCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrowings\ctrBookLookUP.resx">
+      <DependentUpon>ctrBookLookUP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Borrowings\ctrBorrowControl.resx">
       <DependentUpon>ctrBorrowControl.cs</DependentUpon>

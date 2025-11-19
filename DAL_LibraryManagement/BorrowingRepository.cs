@@ -18,7 +18,7 @@ namespace DAL_LibraryManagement
         public static object IsActiveBorrowing(int bookID,int memberID)
         {
             string query = @"SELECT 1 FROM Borrowings WHERE 
-                           BookID=@bookID AND MemberID=@MemberID AND ReturnDate IS NULL;";
+                           BookID=@bookID AND PersonID=@PersonID AND ReturnDate IS NULL;";
           
             var parameters = new Dictionary<string, (SqlDbType, object,int?)>()
             {
@@ -36,7 +36,7 @@ namespace DAL_LibraryManagement
             var commands = new List<(string,Dictionary<string,(SqlDbType,object,int?)>,bool)>();
 
             string query1 = @"INSERT INTO Borrowings(BookID,MemberID,BorrowingDate,DueDate,ReturnDate,Status)
-                          VALUES(@bookID,@memberID,@borrowingData,@dueDate,@returnDate,@status);
+                          VALUES(@bookID,@memberID,@borrowingDate,@dueDate,@returnDate,@status);
                           SELECT CAST(SCOPE_IDENTITY() AS int);";
 
             string query2 = @"UPDATE Books 
@@ -47,8 +47,8 @@ namespace DAL_LibraryManagement
             var parameters1 = new Dictionary<string, (SqlDbType, object, int?)>() {
 
                 ["@bookID"] = (SqlDbType.Int, borrowingData.BookID, null),
-                ["@memberID"] = (SqlDbType.Int, borrowingData.MemberID, null),
-                ["@borrowingData"] = (SqlDbType.DateTime, borrowingData.BorrowingDate, null),
+                ["@memberID"] = (SqlDbType.Int, borrowingData.PersonID, null),
+                ["@borrowingDate"] = (SqlDbType.DateTime, borrowingData.BorrowingDate, null),
                 ["@dueDate"] = (SqlDbType.DateTime, borrowingData.DueDate, null),
                 ["@returnDate"] = (SqlDbType.DateTime, borrowingData.ReturnDate, null),
                 ["@status"] = (SqlDbType.NVarChar, borrowingData.Status, 20),
@@ -74,14 +74,14 @@ namespace DAL_LibraryManagement
         {
             object borrowingID = null;
 
-            string query = @"INSERT INTO Borrowings(BookID,MemberID,BorrowingDate,DueDate,ReturnDate,Status)
+            string query = @"INSERT INTO Borrowings(BookID,PersonID,BorrowingDate,DueDate,ReturnDate,Status)
                           VALUES(@bookID,@memberID,@borrowingData,@dueDate,@returnDate,@status);
                           SELECT CAST(SCOPE_IDENTITY() AS int);";
             var parameters = new Dictionary<string, (SqlDbType, object, int?)>
             {
                 
                 ["@bookID"] = (SqlDbType.Int, borrowingData.BookID, null),
-                ["@memberID"] = (SqlDbType.Int, borrowingData.MemberID, null),
+                ["@memberID"] = (SqlDbType.Int, borrowingData.PersonID, null),
                 ["@borrowingData"]= (SqlDbType.DateTime, borrowingData.BorrowingDate, null),
                 ["@dueDate"]= (SqlDbType.DateTime, borrowingData.DueDate, null),
                 ["@returnDate"]= (SqlDbType.DateTime, borrowingData.ReturnDate, null),
@@ -95,7 +95,7 @@ namespace DAL_LibraryManagement
             string query = @"UPDATE Borrowings
                              
                             SET BookID=@bookID,
-                                MemberID = @memberID,
+                                PersonID = @memberID,
                                 BorrowingDate = @borrowingData,
                                 DueDate = @dueDate,
                                 ReturnDate = @returnDate ,
@@ -106,7 +106,7 @@ namespace DAL_LibraryManagement
             {
                 ["@borrowingID"] = (SqlDbType.Int, borrowingData.BorrowingID, null),
                 ["@bookID"] = (SqlDbType.Int, borrowingData.BookID, null),
-                ["@memberID"] = (SqlDbType.Int, borrowingData.MemberID, null),
+                ["@memberID"] = (SqlDbType.Int, borrowingData.PersonID, null),
                 ["@borrowingData"] = (SqlDbType.DateTime, borrowingData.BorrowingDate, null),
                 ["@dueDate"] = (SqlDbType.DateTime, borrowingData.DueDate, null),
                 ["@returnDate"] = (SqlDbType.DateTime, borrowingData.ReturnDate, null),
@@ -143,7 +143,7 @@ namespace DAL_LibraryManagement
                 {
                     BorrowingID = Convert.ToInt32(reader["BorrowingID"]),
                     BookID = Convert.ToInt32(reader["BookID"]),
-                    MemberID = Convert.ToInt32(reader["MemberID"]),
+                    PersonID = Convert.ToInt32(reader["PersonID"]),
                     BorrowingDate = Convert.ToDateTime(reader["BorrowingDate"]),
                     DueDate = Convert.ToDateTime(reader["DueDate"]),
                     ReturnDate = reader["ReturnDate"] == DBNull.Value ? null : Convert.ToDateTime(reader["ReturnDate"]),
@@ -163,7 +163,7 @@ namespace DAL_LibraryManagement
                 {
                     BorrowingID = Convert.ToInt32(reader["BorrowingID"]),
                     BookID = Convert.ToInt32(reader["BookID"]),
-                    MemberID = Convert.ToInt32(reader["MemberID"]),
+                    PersonID = Convert.ToInt32(reader["PersonID"]),
                     BorrowingDate = Convert.ToDateTime(reader["BorrowingDate"]),
                     DueDate = Convert.ToDateTime(reader["DueDate"]),
                     ReturnDate = reader["ReturnDate"] == DBNull.Value ? null : (DateTime?)reader["ReturnDate"],

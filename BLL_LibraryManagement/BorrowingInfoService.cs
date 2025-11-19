@@ -34,5 +34,7 @@ namespace BLL_LibraryManagement
             var borrowings = list.Select( b => new BorrowingInfoService(b)).ToList();
             return borrowings;
         }
+        
+
     }
 }

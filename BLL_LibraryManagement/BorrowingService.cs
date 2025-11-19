@@ -10,7 +10,7 @@ namespace BLL_LibraryManagement
         public enum Mode {AddNew=1,Update=2 }
         public int BorrowingID { get; private set; }
         public int BookID { get; set; }
-        public int MemberID { get; set; }
+        public int PersonID { get; set; }
         public DateTime BorrowingDate { get; set; }
         public DateTime DueDate{ get; set; }
         public DateTime? ReturnDate { get; set; }
@@ -24,19 +24,19 @@ namespace BLL_LibraryManagement
         {
             BorrowingID = borrowingID;
             BookID = bookID;
-            MemberID = memberID;
+            PersonID = memberID;
             BorrowingDate = borrowingDate;
             DueDate = dueDate;
             ReturnDate = returnDate;
             Status = status;
-            IsActive = _IsActiveBorrowing(BookID,MemberID);
+            IsActive = _IsActiveBorrowing(BookID,PersonID);
             _Mode = Mode.Update;
         }
         public BorrowingService()
         {
            
             BookID = -1;
-            MemberID = -1;
+            PersonID = -1;
             BorrowingDate = DateTime.Now;
             DueDate = DateTime.Now;
             ReturnDate = null;
@@ -47,12 +47,12 @@ namespace BLL_LibraryManagement
 
        
 
-        private BorrowingDTO _FillCurrentDataToTransfer()
+        private BorrowingDTO FillCurrentDataToTransfer()
         {
             return new BorrowingDTO
                          {
                           BookID = BookID,
-                          MemberID = MemberID,
+                          PersonID = PersonID,
                           BorrowingDate = BorrowingDate,
                           DueDate = DueDate,
                           ReturnDate = ReturnDate,
@@ -63,7 +63,7 @@ namespace BLL_LibraryManagement
 
         private bool __AddNewBorrowing()
         {
-            var borrowingData = _FillCurrentDataToTransfer();
+            var borrowingData = FillCurrentDataToTransfer();
             this.BorrowingID = BorrowingRepository.AddNewBorrowing(borrowingData);
             
             return this.BorrowingID > 0;
@@ -72,16 +72,20 @@ namespace BLL_LibraryManagement
 
         private bool _AddNewBorrowing()
         {
-            var borrowingData = _FillCurrentDataToTransfer();
-
+            var borrowingData = FillCurrentDataToTransfer();
+            
             this.BorrowingID = BorrowingRepository.AddBorrowingAndUpdateBook(borrowingData);
-
+            if (BorrowingID <= 0) return false;
+            if (!MemberService.IsPersonAsMember(borrowingData.PersonID))
+            {
+                MemberRepository.AddNewMember(borrowingData.PersonID,DateTime.Now,true);
+            } 
             return this.BorrowingID > 0;
         }
 
         private bool _UpdateBorrowing()
         {
-            var borrowingData = _FillCurrentDataToTransfer();
+            var borrowingData = FillCurrentDataToTransfer();
             int rowsAffected = BorrowingRepository.UpdateBorrowing(borrowingData);
             return rowsAffected > 0;
         }
@@ -91,24 +95,30 @@ namespace BLL_LibraryManagement
             var result = BorrowingRepository.IsActiveBorrowing(bookID,memberID);
             return result != null;
         }
-
+        private bool IsAvailableForBorrowing()
+        {
+           return  (BookService.GetQuantity(BookID) >0);
+        }
         public OperationResultBLL Save()
         {
             switch (_Mode)
             {
                 case Mode.AddNew:
 
-                    if (_IsActiveBorrowing(BookID, MemberID))
-                        return OperationResultBLL.Fail("The book cannot be borrowed ,the member has an active loan for this book .");
+                    if (!IsAvailableForBorrowing())
+                        return OperationResultBLL.Fail("The book is not available for borrow!");
                    
                     if (_AddNewBorrowing())
                     {
                         _Mode = Mode.Update;
                         return OperationResultBLL.Ok("The book has been successfully borrowed .");
                     }
-                  
-                    break;
+                    else
+                    {
+                        return OperationResultBLL.Fail("The borrowing cannot be added!");
+                    }
 
+                       
                 case Mode.Update:
 
                     if (!IsActive)
@@ -129,7 +139,7 @@ namespace BLL_LibraryManagement
             if (borrowingsList == null) return null;
 
             var borrowings = borrowingsList.Select(
-                b => new BorrowingService(b.BorrowingID, b.BookID, b.MemberID, b.BorrowingDate, b.DueDate, b.ReturnDate, b.Status)
+                b => new BorrowingService(b.BorrowingID, b.BookID, b.PersonID, b.BorrowingDate, b.DueDate, b.ReturnDate, b.Status)
               ).ToList();
 
             return borrowings;
@@ -139,7 +149,7 @@ namespace BLL_LibraryManagement
         {
             var dtoInfo = BorrowingRepository.FindBorrowingByID(id);
            if(dtoInfo == null) return null;
-            return new BorrowingService(dtoInfo.BorrowingID,dtoInfo.BookID,dtoInfo.MemberID,dtoInfo.BorrowingDate,dtoInfo.DueDate,dtoInfo.ReturnDate,dtoInfo.Status);
+            return new BorrowingService(dtoInfo.BorrowingID,dtoInfo.BookID,dtoInfo.PersonID,dtoInfo.BorrowingDate,dtoInfo.DueDate,dtoInfo.ReturnDate,dtoInfo.Status);
         }
 
         public OperationResultBLL ReturnBookAndRestock()

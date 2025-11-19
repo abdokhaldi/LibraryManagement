@@ -12,24 +12,27 @@ namespace DAL_LibraryManagement
     {
         public static List<SmallPersonDTO> GetPersonAutoSearch(string searchTerm)
         {
-            List<SmallPersonDTO> people = null;
+            List<SmallPersonDTO> people = new List<SmallPersonDTO>();
             string query = @"SELECT * FROM SmallPeople WHERE FullName LIKE @searchTerm";
             var parameters = new Dictionary<string, (SqlDbType, object, int?)>
             {
                 ["@searchTerm"] = (SqlDbType.NVarChar, searchTerm, null),
             };
             using var reader = SqlHelper.ExecuteReaderWildCard(query, CommandType.Text, parameters);
-            while (reader != null && reader.Read())
+            if (reader == null)
             {
-                people = new()
-                {
+                people = null;
+                return people;
+            }
+            while (reader.Read())
+            {
+                people.Add(
                     new SmallPersonDTO
                     {
                         PersonID = Convert.ToInt32(reader["PersonID"]),
                         FullName = reader["FullName"].ToString(),
-                    }
-                };
-            }
+                    });
+                 }
             return people;
         }
 

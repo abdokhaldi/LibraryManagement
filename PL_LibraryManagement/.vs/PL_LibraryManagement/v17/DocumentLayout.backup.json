@@ -3,35 +3,78 @@
   "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\pl_librarymanagement\\borrowings\\frmborrowscrean.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\frmborrowscrean.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\borrowings\\ctrmanageborrowings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\ctrmanageborrowings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\borrowingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\borrowings\\ctrborrowcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\ctrborrowcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\borrowings\\ctrborrowcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\ctrborrowcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\borrowings\\ctrbooklookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\ctrbooklookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\borrowings\\ctrbooklookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\ctrbooklookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\borrowings\\ctrlookupcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\ctrlookupcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\pl_librarymanagement\\borrowings\\ctrlookupcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\ctrlookupcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\memberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\borrowinginfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\borrowings\\ctrmanageborrowings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\ctrmanageborrowings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\borrowings\\frmborrowscrean.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\frmborrowscrean.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\smallbookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\smallpersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\managers\\borrowingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:managers\\borrowingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\borrowings\\ctrmanageborrowings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\ctrmanageborrowings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\pl_librarymanagement\\borrowings\\ctrborrowcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\ctrborrowcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\borrowings\\frmborrowscrean.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:borrowings\\frmborrowscrean.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B94CE0-B3B5-4596-A455-553A2A434034}|..\\BLL_LibraryManagement\\BLL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\bll_librarymanagement\\smallbookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9620B8A2-AB38-4DEB-BE0F-86AF39663E5A}|..\\DTO_LibraryManagement\\DTO_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dto_librarymanagement\\smallbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3E7E107A-72E2-4E1B-8E00-80EBBEF04382}|..\\DAL_LibraryManagement\\DAL_LibraryManagement.csproj|c:\\users\\hp\\source\\repos\\dal_librarymanagement\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DB940C57-79C2-40B9-9E14-60B4F89FB9E1}|PL_LibraryManagement.csproj|solutionrelative:frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,18 +89,207 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SqlHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\SqlHelper.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\SqlHelper.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\SqlHelper.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\SqlHelper.cs",
+              "ViewState": "AgIAAIwAAADA/////38wwJAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T00:11:36.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BorrowingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\BorrowingRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\BorrowingRepository.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\BorrowingRepository.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\BorrowingRepository.cs",
+              "ViewState": "AgIAADsAAAAgAAAAAIAwwD8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T23:52:16.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MemberService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\MemberService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\MemberService.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\MemberService.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\MemberService.cs",
+              "ViewState": "AgIAAHQAAABAZmZmZmYmwIcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T22:33:22.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BorrowingService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\BorrowingService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\BorrowingService.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\BorrowingService.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\BorrowingService.cs",
+              "ViewState": "AgIAAEcAAAAAaGZmZmYOwEwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T21:27:05.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BorrowingInfoService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\BorrowingInfoService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\BorrowingInfoService.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\BorrowingInfoService.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\BorrowingInfoService.cs",
+              "ViewState": "AgIAAB0AAAAAzMzMzMz8vyQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T21:21:51.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SmallPersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\SmallPersonRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\SmallPersonRepository.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\SmallPersonRepository.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\SmallPersonRepository.cs",
+              "ViewState": "AgIAAA8AAABAZmZmZmYSwBQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:20:46.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ctrBorrowControl.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrBorrowControl.cs",
+              "RelativeDocumentMoniker": "Borrowings\\ctrBorrowControl.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrBorrowControl.cs",
+              "RelativeToolTip": "Borrowings\\ctrBorrowControl.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAhwEcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T17:13:28.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ctrLookUpControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrLookUpControl.cs",
+              "RelativeDocumentMoniker": "Borrowings\\ctrLookUpControl.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrLookUpControl.cs [Design]",
+              "RelativeToolTip": "Borrowings\\ctrLookUpControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:51:00.717Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BorrowingManager.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Managers\\BorrowingManager.cs",
+              "RelativeDocumentMoniker": "Managers\\BorrowingManager.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Managers\\BorrowingManager.cs",
+              "RelativeToolTip": "Managers\\BorrowingManager.cs",
+              "ViewState": "AgIAACIAAAAAmpmZmZkbwCcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T13:21:46.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "frmBorrowScrean.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\frmBorrowScrean.cs",
+              "RelativeDocumentMoniker": "Borrowings\\frmBorrowScrean.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\frmBorrowScrean.cs",
+              "RelativeToolTip": "Borrowings\\frmBorrowScrean.cs",
+              "ViewState": "AgIAABAAAABgZmZmZmYiwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T12:19:51.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ctrBookLookUP.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrBookLookUP.cs",
+              "RelativeDocumentMoniker": "Borrowings\\ctrBookLookUP.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrBookLookUP.cs",
+              "RelativeToolTip": "Borrowings\\ctrBookLookUP.cs",
+              "ViewState": "AgIAAEUAAACAmZmZmRk9wEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T12:13:07.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ctrBookLookUP.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrBookLookUP.cs",
+              "RelativeDocumentMoniker": "Borrowings\\ctrBookLookUP.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrBookLookUP.cs [Design]",
+              "RelativeToolTip": "Borrowings\\ctrBookLookUP.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T12:12:24.603Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SmallBookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\SmallBookRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\SmallBookRepository.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\SmallBookRepository.cs",
+              "RelativeToolTip": "..\\DAL_LibraryManagement\\SmallBookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T12:06:58.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SmallBookService.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\SmallBookService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_LibraryManagement\\SmallBookService.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\BLL_LibraryManagement\\SmallBookService.cs",
+              "RelativeToolTip": "..\\BLL_LibraryManagement\\SmallBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T11:28:37.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SmallBookDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\SmallBookDTO.cs",
+              "RelativeDocumentMoniker": "..\\DTO_LibraryManagement\\SmallBookDTO.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\DTO_LibraryManagement\\SmallBookDTO.cs",
+              "RelativeToolTip": "..\\DTO_LibraryManagement\\SmallBookDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T11:26:48.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "frmBorrowScrean.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\frmBorrowScrean.cs",
               "RelativeDocumentMoniker": "Borrowings\\frmBorrowScrean.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\frmBorrowScrean.cs [Design]*",
-              "RelativeToolTip": "Borrowings\\frmBorrowScrean.cs [Design]*",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\frmBorrowScrean.cs [Design]",
+              "RelativeToolTip": "Borrowings\\frmBorrowScrean.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T20:14:55.465Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ctrBorrowControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrBorrowControl.cs",
               "RelativeDocumentMoniker": "Borrowings\\ctrBorrowControl.cs",
@@ -69,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 20,
               "Title": "PersonRepository.cs",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\DAL_LibraryManagement\\PersonRepository.cs",
               "RelativeDocumentMoniker": "..\\DAL_LibraryManagement\\PersonRepository.cs",
@@ -77,50 +309,24 @@
               "RelativeToolTip": "..\\DAL_LibraryManagement\\PersonRepository.cs",
               "ViewState": "AgIAABUAAAAAOjMzMzPjvxUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T18:01:49.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T18:01:49.679Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ctrLookUpControl.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrLookUpControl.cs",
-              "RelativeDocumentMoniker": "Borrowings\\ctrLookUpControl.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrLookUpControl.cs",
-              "RelativeToolTip": "Borrowings\\ctrLookUpControl.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAqwD4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T15:40:45.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ctrLookUpControl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrLookUpControl.cs",
-              "RelativeDocumentMoniker": "Borrowings\\ctrLookUpControl.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrLookUpControl.cs [Design]",
-              "RelativeToolTip": "Borrowings\\ctrLookUpControl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T15:17:46.489Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "ctrManageBorrowings.cs",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrManageBorrowings.cs",
               "RelativeDocumentMoniker": "Borrowings\\ctrManageBorrowings.cs",
               "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrManageBorrowings.cs",
               "RelativeToolTip": "Borrowings\\ctrManageBorrowings.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAIAwwDkAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAADw//////8vwDoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T14:18:35.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "ctrManageBorrowings.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\Borrowings\\ctrManageBorrowings.cs",
               "RelativeDocumentMoniker": "Borrowings\\ctrManageBorrowings.cs",
@@ -132,14 +338,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "frmHome.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\frmHome.cs",
               "RelativeDocumentMoniker": "frmHome.cs",
               "ToolTip": "C:\\Users\\Hp\\source\\repos\\PL_LibraryManagement\\frmHome.cs [Design]",
               "RelativeToolTip": "frmHome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:25:12.037Z"
+              "WhenOpened": "2025-11-17T13:25:12.037Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -1,10 +1,5 @@
 ﻿using PL_LibraryManagement.Borrowings;
 using PL_LibraryManagement.UI_Theme;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PL_LibraryManagement.Managers
@@ -14,10 +9,12 @@ namespace PL_LibraryManagement.Managers
        private Panel _MainPanel;
 
         private ctrManageBorrowings _ManageBorrowingList ;
+        ctrBorrowControl _BorrowControl;
         public BorrowingManager(Panel mainPanel)
         {
             _MainPanel = mainPanel;
             _ManageBorrowingList = new ctrManageBorrowings();
+            _BorrowControl = new ctrBorrowControl();
         }
 
         public void ShowBorrowingList()
@@ -27,10 +24,23 @@ namespace PL_LibraryManagement.Managers
             _ManageBorrowingList.Dock = DockStyle.Fill;
             
             _MainPanel.Controls.Add(_ManageBorrowingList);
-
+            AttachEvents();
+        }
+         private void AttachEvents()
+        {
+            _ManageBorrowingList.BorrowCardAdded -= AddBorrowControl;
+            _ManageBorrowingList.BorrowCardAdded += AddBorrowControl;
         }
 
-
-
+        private void AddBorrowControl()
+        {
+            if (_MainPanel.Contains(_BorrowControl))
+            {
+                return;
+            }
+            _ManageBorrowingList.Dock = DockStyle.Top;
+            CardPosition.SetCardPosition(CardPosition.enCardLocation.BottomCenter,_MainPanel, _BorrowControl);
+            _MainPanel.Controls.Add(_BorrowControl);
+        }
     }
 }

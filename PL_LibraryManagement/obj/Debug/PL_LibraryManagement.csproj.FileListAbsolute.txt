@@ -34,3 +34,4 @@ C:\Users\Hp\source\repos\PL_LibraryManagement\obj\Debug\PL_LibraryManagement.Bor
 C:\Users\Hp\source\repos\PL_LibraryManagement\obj\Debug\PL_LibraryManagement.Borrowings.ctrBorrowControl.resources
 C:\Users\Hp\source\repos\PL_LibraryManagement\obj\Debug\PL_LibraryManagement.Borrowings.ctrLookUpControl.resources
 C:\Users\Hp\source\repos\PL_LibraryManagement\obj\Debug\PL_LibraryManagement.Borrowings.frmBorrowScrean.resources
+C:\Users\Hp\source\repos\PL_LibraryManagement\obj\Debug\PL_LibraryManagement.Borrowings.ctrBookLookUP.resources

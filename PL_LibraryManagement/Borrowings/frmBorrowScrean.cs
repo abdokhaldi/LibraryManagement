@@ -15,8 +15,8 @@ namespace PL_LibraryManagement.Borrowings
         public frmBorrowScrean()
         {
             InitializeComponent();
-            ctrLookUpControl1.dtDueDateVisible += Visible;
-            ctrLookUpControl1.dtDueDateInvisible += Invisible;
+           // ctrLookUpControl1.dtDueDateVisible += Visible;
+           // ctrLookUpControl1.dtDueDateInvisible += Invisible;
         }
 
         private void Visible()

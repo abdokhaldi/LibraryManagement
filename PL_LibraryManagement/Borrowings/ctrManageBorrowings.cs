@@ -14,6 +14,7 @@ namespace PL_LibraryManagement.Borrowings
 {
     public partial class ctrManageBorrowings : UserControl
     {
+        public event Action BorrowCardAdded;
         public ctrManageBorrowings()
         {
             InitializeComponent();
@@ -55,8 +56,7 @@ namespace PL_LibraryManagement.Borrowings
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmBorrowScrean borrowScreen = new frmBorrowScrean();
-            borrowScreen.Show();
+            BorrowCardAdded?.Invoke();
         }
     }
 }

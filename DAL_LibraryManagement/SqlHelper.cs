@@ -138,7 +138,7 @@ namespace DAL_LibraryManagement
                             {
                                 param.Size = p.Value.Item3.Value;
                             }
-                            param.Value = p.Value.Item2;
+                            param.Value = p.Value.Item2??DBNull.Value;
                         }
                         
                     }
