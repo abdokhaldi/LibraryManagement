@@ -15,18 +15,11 @@ namespace PL_LibraryManagement.Borrowings
         public frmBorrowScrean()
         {
             InitializeComponent();
-           // ctrLookUpControl1.dtDueDateVisible += Visible;
-           // ctrLookUpControl1.dtDueDateInvisible += Invisible;
+           // ctrPersonLookUp.dtDueDateVisible += Visible;
+           // ctrPersonLookUp.dtDueDateInvisible += Invisible;
         }
 
-        private void Visible()
-        {
-            dateTimePicker1.Visible = true;
-        }
-        private void Invisible()
-        {
-            dateTimePicker1.Visible = false;
-        }
+        
 
         private void ctrLookUpControl1_Load(object sender, EventArgs e)
         {

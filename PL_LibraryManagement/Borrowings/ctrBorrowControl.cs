@@ -16,34 +16,45 @@ namespace PL_LibraryManagement.Borrowings
     {
         private int _SelectedBookID = 0;
         private int _SelectedPersonID = 0;
+        
         public ctrBorrowControl()
         {
             InitializeComponent();
+            AppColors.SetupGroupBoxFormUI(gbBorrow, "Add :");
+           
+            SetupLoading();
 
-            AppColors.SetupGroupBoxFormUI(gbBorrow,"Borrowings Card :");
+            AttachEvents();
+        }
+
+        private void SetupLoading()
+        {
+            
             this.plBorrow.BackColor = Color.White;
             btnBorrow.BackColor = AppColors.Accent;
             btnCancel.BackColor = AppColors.Danger;
-            plBorrow.Padding = new Padding(10,30,10,10);
+            plBorrow.Padding = new Padding(10, 30, 10, 10);
             this.Height = 300;
             this.Width = 700;
-            AttachEvents();
-        } 
+            dtDueDate.Value = DateTime.Now.AddDays(7);
+        }
         private void AttachEvents()
         {
             ctrBookLookUP1.SelectedBookIDShared -= ReceiveSelectedBookID;
             ctrBookLookUP1.SelectedBookIDShared += ReceiveSelectedBookID;
 
-            ctrLookUpControl1.SelectedBorrowerIDShared -= ReceiveSelectedBorrowerID;
-            ctrLookUpControl1.SelectedBorrowerIDShared += ReceiveSelectedBorrowerID;
+            ctrPersonLookUp.SelectedBorrowerIDShared -= ReceiveSelectedBorrowerID;
+            ctrPersonLookUp.SelectedBorrowerIDShared += ReceiveSelectedBorrowerID;
 
         }
         private void ReceiveSelectedBookID(int bookID)
         {
-            _SelectedBookID = bookID;
+            
+                _SelectedBookID = bookID;
         }
         private void ReceiveSelectedBorrowerID(int personID)
         {
+            
             _SelectedPersonID = personID;
         }
 
@@ -59,6 +70,10 @@ namespace PL_LibraryManagement.Borrowings
         }
         private void btnBorrow_Click(object sender, EventArgs e)
         {
+
+            Save();
+        }
+        private void AddBorrowing(BorrowingService borrowing) {
             if (_SelectedBookID <= 0)
             {
                 Message("book");
@@ -69,15 +84,24 @@ namespace PL_LibraryManagement.Borrowings
                 Message("borrower");
                 return;
             }
-            BorrowingService borrowing = new BorrowingService();
-            borrowing.BookID = _SelectedBookID;
+            
+            borrowing.BookID =   _SelectedBookID;
             borrowing.PersonID = _SelectedPersonID;
             borrowing.DueDate = dtDueDate.Value;
+        }
+        
+        private void Save()
+        {
+            BorrowingService borrowing = new BorrowingService();
+            AddBorrowing(borrowing);
             OperationResultBLL result = borrowing.Save();
             if (result.Success)
             {
                 MessageBox.Show(result.Message);
             }
+            else { MessageBox.Show(result.Message); }
+            
         }
+
     }
 }

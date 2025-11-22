@@ -9,6 +9,7 @@ namespace BLL_LibraryManagement
     public class BorrowingInfoService
     {
         public int BorrowingID { get; set; }
+        public int BookID { get; set; }
         public string Title { get; set; }
         public string FullName { get; set; }
         public DateTime BorrowingDate { get; set; }
@@ -18,6 +19,7 @@ namespace BLL_LibraryManagement
         private BorrowingInfoService(BorrowingInfoDTO borrowingDTO)
         {
             BorrowingID = borrowingDTO.BorrowingID;
+            BookID = borrowingDTO.BookID;
             Title = borrowingDTO.Title;
             FullName = borrowingDTO.FullName;
             BorrowingDate = borrowingDTO.BorrowingDate;

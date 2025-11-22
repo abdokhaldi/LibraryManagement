@@ -2,19 +2,15 @@
 using PL_LibraryManagement.UI_Theme;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace PL_LibraryManagement.Borrowings
 {
     public partial class ctrManageBorrowings : UserControl
     {
-        public event Action BorrowCardAdded;
+        public event Action BorrowingCardAdded;
+        public event Action<int> BorrowingCanceled;
         public ctrManageBorrowings()
         {
             InitializeComponent();
@@ -50,13 +46,41 @@ namespace PL_LibraryManagement.Borrowings
             dgvBorrowings.Columns.Clear();
             
             CreateColumns();
+            dgvBorrowings.ContextMenuStrip = contextMenuStrip2;
             dgvBorrowings.DataSource = BorrowingInfoService.GetAllBorrowingsInfo(); 
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            BorrowCardAdded?.Invoke();
+            BorrowingCardAdded?.Invoke();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BorrowingInfoService selectedBorrowing = (BorrowingInfoService)dgvBorrowings.SelectedRows[0].DataBoundItem;
+            if (selectedBorrowing != null)
+            {
+                
+            }
+
+        }
+
+        private void deactivateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BorrowingInfoService selectedBorrowing = (BorrowingInfoService)dgvBorrowings.SelectedRows[0].DataBoundItem;
+            if (dgvBorrowings.SelectedRows.Count == 0) return;
+            if (selectedBorrowing == null) return;
+
+            OperationResultBLL result = BorrowingService.CancelBorrowing(selectedBorrowing.BorrowingID, selectedBorrowing.BookID);
+            if (result.Success)
+            {
+                MessageBox.Show(result.Message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show(result.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

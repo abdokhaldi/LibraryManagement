@@ -1,6 +1,6 @@
 ﻿namespace PL_LibraryManagement.Borrowings
 {
-    partial class ctrLookUpControl
+    partial class ctrPersonLookUp
     {
         /// <summary> 
         /// Required designer variable.
@@ -70,12 +70,12 @@
             this.dgvLookUp.TabIndex = 2;
             this.dgvLookUp.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLookUp_CellDoubleClick);
             // 
-            // ctrLookUpControl
+            // ctrPersonLookUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tbLookUp);
-            this.Name = "ctrLookUpControl";
+            this.Name = "ctrPersonLookUp";
             this.Size = new System.Drawing.Size(181, 95);
             this.tbLookUp.ResumeLayout(false);
             this.tbLookUp.PerformLayout();

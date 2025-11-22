@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace PL_LibraryManagement.Borrowings
 {
     
-    public partial class ctrLookUpControl : UserControl
+    public partial class ctrPersonLookUp : UserControl
     {
         private int _SelectedBorrowerID = 0;
         string _currentSearchTerm = "";
@@ -18,30 +18,34 @@ namespace PL_LibraryManagement.Borrowings
             Interval = 400,
             Enabled = false,
         };
-        private void CreateColumns()
-        {
-            
-            if (dgvLookUp.Columns.Count > 0)
-                return;
-            dgvLookUp.AutoGenerateColumns = false ;
-            var columns = new Dictionary<string, (string, int)>
-            { 
-                
-                ["FullName99"] = ("Name",0),
-                ["PersonID"] = ("ID",40),
-                
-            };
-
-            UIConfigurator.CreateColumns(dgvLookUp,columns);
-        }
-        public ctrLookUpControl()
+       
+        
+        public ctrPersonLookUp()
         {
             InitializeComponent();
             dgvLookUp.Visible = false;
             dgvLookUp.RowHeadersVisible = false;
+
             searchTimer.Tick += timerSearch_tick;
         }
 
+        
+        private void CreateColumns()
+        {
+
+            if (dgvLookUp.Columns.Count > 0)
+                return;
+            dgvLookUp.AutoGenerateColumns = false;
+            var columns = new Dictionary<string, (string, int)>
+            {
+
+                ["FullName99"] = ("Name", 0),
+                ["PersonID"] = ("ID", 40),
+
+            };
+
+            UIConfigurator.CreateColumns(dgvLookUp, columns);
+        }
         private void AdjustResultsRowHeight(bool showResults)
         {
             if (tbLookUp.RowStyles.Count <= 1)

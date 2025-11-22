@@ -72,11 +72,11 @@
     <Compile Include="Borrowings\ctrBorrowControl.Designer.cs">
       <DependentUpon>ctrBorrowControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Borrowings\ctrLookUpControl.cs">
+    <Compile Include="Borrowings\ctrPersonLookUp.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Borrowings\ctrLookUpControl.Designer.cs">
-      <DependentUpon>ctrLookUpControl.cs</DependentUpon>
+    <Compile Include="Borrowings\ctrPersonLookUp.Designer.cs">
+      <DependentUpon>ctrPersonLookUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Borrowings\ctrManageBorrowings.cs">
       <SubType>UserControl</SubType>
@@ -197,8 +197,8 @@
     <EmbeddedResource Include="Borrowings\ctrBorrowControl.resx">
       <DependentUpon>ctrBorrowControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Borrowings\ctrLookUpControl.resx">
-      <DependentUpon>ctrLookUpControl.cs</DependentUpon>
+    <EmbeddedResource Include="Borrowings\ctrPersonLookUp.resx">
+      <DependentUpon>ctrPersonLookUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Borrowings\ctrManageBorrowings.resx">
       <DependentUpon>ctrManageBorrowings.cs</DependentUpon>

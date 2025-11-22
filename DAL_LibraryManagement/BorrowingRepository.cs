@@ -15,15 +15,15 @@ namespace DAL_LibraryManagement
     public class BorrowingRepository
     {
 
-        public static object IsActiveBorrowing(int bookID,int memberID)
+        public static object IsActiveBorrowing(int bookID,int personID)
         {
             string query = @"SELECT 1 FROM Borrowings WHERE 
-                           BookID=@bookID AND PersonID=@PersonID AND ReturnDate IS NULL;";
+                           BookID=@bookID AND MemberID=@personID AND ReturnDate IS NULL;";
           
             var parameters = new Dictionary<string, (SqlDbType, object,int?)>()
             {
                 ["@bookID"] = (SqlDbType.Int,bookID,null),
-                ["@memberID"] = (SqlDbType.Int, memberID,null)
+                ["@personID"] = (SqlDbType.Int, personID,null)
             };
 
             object result = SqlHelper.ExecuteCommand(query,CommandType.Text,SqlHelper.ExecuteType.ExecuteScalar,parameters);
@@ -35,8 +35,8 @@ namespace DAL_LibraryManagement
             int borrowingID = 0;
             var commands = new List<(string,Dictionary<string,(SqlDbType,object,int?)>,bool)>();
 
-            string query1 = @"INSERT INTO Borrowings(BookID,MemberID,BorrowingDate,DueDate,ReturnDate,Status)
-                          VALUES(@bookID,@memberID,@borrowingDate,@dueDate,@returnDate,@status);
+            string query1 = @"INSERT INTO Borrowings(BookID,MemberID,BorrowingDate,DueDate,ReturnDate,Status,IsCanceled)
+                          VALUES(@bookID,@personID,@borrowingDate,@dueDate,@returnDate,@status,@isCanceled);
                           SELECT CAST(SCOPE_IDENTITY() AS int);";
 
             string query2 = @"UPDATE Books 
@@ -47,11 +47,13 @@ namespace DAL_LibraryManagement
             var parameters1 = new Dictionary<string, (SqlDbType, object, int?)>() {
 
                 ["@bookID"] = (SqlDbType.Int, borrowingData.BookID, null),
-                ["@memberID"] = (SqlDbType.Int, borrowingData.PersonID, null),
+                ["@personID"] = (SqlDbType.Int, borrowingData.PersonID, null),
                 ["@borrowingDate"] = (SqlDbType.DateTime, borrowingData.BorrowingDate, null),
                 ["@dueDate"] = (SqlDbType.DateTime, borrowingData.DueDate, null),
                 ["@returnDate"] = (SqlDbType.DateTime, borrowingData.ReturnDate, null),
                 ["@status"] = (SqlDbType.NVarChar, borrowingData.Status, 20),
+                ["@isCanceled"] = (SqlDbType.Bit, borrowingData.IsCanceled, null),
+
             };
             var parameters2 = new Dictionary<string, (SqlDbType, object, int?)>()
             {
@@ -75,13 +77,13 @@ namespace DAL_LibraryManagement
             object borrowingID = null;
 
             string query = @"INSERT INTO Borrowings(BookID,PersonID,BorrowingDate,DueDate,ReturnDate,Status)
-                          VALUES(@bookID,@memberID,@borrowingData,@dueDate,@returnDate,@status);
+                          VALUES(@bookID,@personID,@borrowingData,@dueDate,@returnDate,@status);
                           SELECT CAST(SCOPE_IDENTITY() AS int);";
             var parameters = new Dictionary<string, (SqlDbType, object, int?)>
             {
                 
                 ["@bookID"] = (SqlDbType.Int, borrowingData.BookID, null),
-                ["@memberID"] = (SqlDbType.Int, borrowingData.PersonID, null),
+                ["@personID"] = (SqlDbType.Int, borrowingData.PersonID, null),
                 ["@borrowingData"]= (SqlDbType.DateTime, borrowingData.BorrowingDate, null),
                 ["@dueDate"]= (SqlDbType.DateTime, borrowingData.DueDate, null),
                 ["@returnDate"]= (SqlDbType.DateTime, borrowingData.ReturnDate, null),
@@ -95,7 +97,7 @@ namespace DAL_LibraryManagement
             string query = @"UPDATE Borrowings
                              
                             SET BookID=@bookID,
-                                PersonID = @memberID,
+                                MemberID = @personID,
                                 BorrowingDate = @borrowingData,
                                 DueDate = @dueDate,
                                 ReturnDate = @returnDate ,
@@ -106,7 +108,7 @@ namespace DAL_LibraryManagement
             {
                 ["@borrowingID"] = (SqlDbType.Int, borrowingData.BorrowingID, null),
                 ["@bookID"] = (SqlDbType.Int, borrowingData.BookID, null),
-                ["@memberID"] = (SqlDbType.Int, borrowingData.PersonID, null),
+                ["@personID"] = (SqlDbType.Int, borrowingData.PersonID, null),
                 ["@borrowingData"] = (SqlDbType.DateTime, borrowingData.BorrowingDate, null),
                 ["@dueDate"] = (SqlDbType.DateTime, borrowingData.DueDate, null),
                 ["@returnDate"] = (SqlDbType.DateTime, borrowingData.ReturnDate, null),
@@ -137,24 +139,28 @@ namespace DAL_LibraryManagement
             };
           using var reader = SqlHelper.ExecuteReader(query, CommandType.Text, parameters);
 
-           if (!reader.Read()) return null;
+            if (reader != null && reader.Read())
+            {
 
-              return new BorrowingDTO
+                return new BorrowingDTO
                 {
                     BorrowingID = Convert.ToInt32(reader["BorrowingID"]),
                     BookID = Convert.ToInt32(reader["BookID"]),
-                    PersonID = Convert.ToInt32(reader["PersonID"]),
+                    PersonID = Convert.ToInt32(reader["MemberID"]),
                     BorrowingDate = Convert.ToDateTime(reader["BorrowingDate"]),
                     DueDate = Convert.ToDateTime(reader["DueDate"]),
                     ReturnDate = reader["ReturnDate"] == DBNull.Value ? null : Convert.ToDateTime(reader["ReturnDate"]),
-                    Status = reader["Status"].ToString()
+                    Status = reader["Status"].ToString(),
+                    IsCanceled = Convert.ToBoolean(reader["IsCanceled"])
                 };
+            }
+            return null;
             }
            
         public static List<BorrowingDTO> GetAllBorrowings()
         {
             var list = new List<BorrowingDTO>();
-            string query = @"SELECT * FROM Borrowings";
+            string query = @"SELECT * FROM Borrowings;";
             using var reader = SqlHelper.ExecuteReader(query,CommandType.Text);
             BorrowingDTO dto = null;
             while (reader.Read())
@@ -167,7 +173,9 @@ namespace DAL_LibraryManagement
                     BorrowingDate = Convert.ToDateTime(reader["BorrowingDate"]),
                     DueDate = Convert.ToDateTime(reader["DueDate"]),
                     ReturnDate = reader["ReturnDate"] == DBNull.Value ? null : (DateTime?)reader["ReturnDate"],
-                    Status = Convert.ToString(reader["Status"])
+                    Status = Convert.ToString(reader["Status"]),
+                    IsCanceled = Convert.ToBoolean(reader["IsCanceled"])
+                    
                 };
                 list.Add(dto);
             }
@@ -202,8 +210,34 @@ namespace DAL_LibraryManagement
             return  result.Success;
                
        }
-        
-        
-    
+        public static bool CancelBorrowing(int borrowingID,int bookID)
+        {
+            string query1 = @"UPDATE Borrowings SET IsCanceled=1,ReturnDate=GetDate(),Status='Canceled'  WHERE BorrowingID=@borrowingID AND ReturnDate IS NULL AND IsCanceled=0;";
+            string query2 = @"UPDATE Books SET Quantity=Quantity+1 WHERE BookID=@bookID;";
+
+            var parameters1 = new Dictionary<string, (SqlDbType, object, int?)>
+            {
+                ["@borrowingID"] = (SqlDbType.Int, borrowingID, null)
+            };
+            var parameters2 = new Dictionary<string, (SqlDbType, object, int?)>
+            {
+                ["@bookID"] = (SqlDbType.Int, bookID, null)
+            };
+
+            var cmdBorrowing = (query1, parameters1, false);
+            var cmdBook = (query2, parameters2, false);
+
+            var commands = new List<(string, Dictionary<string, (SqlDbType, object, int?)>, bool)>()
+            {
+                cmdBorrowing,cmdBook
+            };
+
+            var result = SqlHelper.ExecuteTransaction(commands);
+
+            return result.Success;
+
+        }
+
+
     }
 }

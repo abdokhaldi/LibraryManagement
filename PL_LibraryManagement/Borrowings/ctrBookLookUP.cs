@@ -2,12 +2,6 @@
 using PL_LibraryManagement.UI_Theme;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PL_LibraryManagement.Borrowings
@@ -22,13 +16,16 @@ namespace PL_LibraryManagement.Borrowings
             Interval = 400,
             Enabled = false,
         };
+        
         public ctrBookLookUP()
         {
             InitializeComponent();
             dgvLookUp.Visible = false;
             dgvLookUp.RowHeadersVisible = false;
             searchTimer.Tick += timerSearch_tick;
+
         }
+
         private void CreateColumns()
         {
             dgvLookUp.AutoGenerateColumns = false;

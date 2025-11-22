@@ -55,7 +55,7 @@ namespace DAL_LibraryManagement
                     {
                         param.Size = p.Value.Item3.Value;
                     }
-                    param.Value = "%" +p.Value.Item2+"%";
+                    param.Value = "%"+p.Value.Item2+"%";
                 }
             }
 
@@ -114,7 +114,7 @@ namespace DAL_LibraryManagement
         {
             var result = new OperationResultBLL();
             object returnedValue = null;
-
+            
             using var conn = new SqlConnection(connectionString);
 
             conn.Open();
@@ -138,20 +138,34 @@ namespace DAL_LibraryManagement
                             {
                                 param.Size = p.Value.Item3.Value;
                             }
-                            param.Value = p.Value.Item2??DBNull.Value;
+                            param.Value = p.Value.Item2 ?? DBNull.Value;
                         }
-                        
+
                     }
                     if (cmd.returnsValue)
                     {
                         returnedValue = comm.ExecuteScalar();
                     }
-                    comm.ExecuteNonQuery();
+                    else
+                    {
+                        int currentRowsAffected = comm.ExecuteNonQuery();
+                        if (currentRowsAffected == 0 && 
+                            (cmd.query.StartsWith("UPDATE" , StringComparison.OrdinalIgnoreCase) ||
+                            cmd.query.StartsWith("DELETE", StringComparison.OrdinalIgnoreCase)))
+                           
+                        {
+                            transaction.Rollback();
+                            result.Success = false;
+                            result.Message = "Logic failure: The critical operation failed to affect any rows (item already canceled or not found).";
+                            return result; 
+                        }
+                        
+                    }
+
                 }
                 transaction.Commit();
                 result.Success = true;
                 result.ReturnedValue = returnedValue;
-               
             }
             catch (Exception ex)
             {
@@ -159,7 +173,7 @@ namespace DAL_LibraryManagement
 
                 result.Success = false;
                 result.Message = ex.Message;
-                
+
             }
             return result;
         }

@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrLookUpControl1 = new PL_LibraryManagement.Borrowings.ctrLookUpControl();
+            this.ctrLookUpControl1 = new PL_LibraryManagement.Borrowings.ctrPersonLookUp();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // ctrLookUpControl1
+            // ctrPersonLookUp
             // 
             this.ctrLookUpControl1.Location = new System.Drawing.Point(352, 29);
-            this.ctrLookUpControl1.Name = "ctrLookUpControl1";
+            this.ctrLookUpControl1.Name = "ctrPersonLookUp";
             this.ctrLookUpControl1.Size = new System.Drawing.Size(225, 80);
             this.ctrLookUpControl1.TabIndex = 2;
             this.ctrLookUpControl1.Load += new System.EventHandler(this.ctrLookUpControl1_Load);
@@ -61,7 +61,7 @@
         }
 
         #endregion
-        private ctrLookUpControl ctrLookUpControl1;
+        private ctrPersonLookUp ctrLookUpControl1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

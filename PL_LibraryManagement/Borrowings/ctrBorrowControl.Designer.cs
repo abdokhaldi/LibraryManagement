@@ -40,7 +40,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.plSelectBorrower = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.ctrLookUpControl1 = new PL_LibraryManagement.Borrowings.ctrLookUpControl();
+            this.ctrPersonLookUp = new PL_LibraryManagement.Borrowings.ctrPersonLookUp();
             this.label3 = new System.Windows.Forms.Label();
             this.dtDueDate = new System.Windows.Forms.DateTimePicker();
             this.gbBorrow.SuspendLayout();
@@ -161,7 +161,7 @@
             // plSelectBorrower
             // 
             this.plSelectBorrower.Controls.Add(this.label2);
-            this.plSelectBorrower.Controls.Add(this.ctrLookUpControl1);
+            this.plSelectBorrower.Controls.Add(this.ctrPersonLookUp);
             this.plSelectBorrower.Controls.Add(this.label3);
             this.plSelectBorrower.Controls.Add(this.dtDueDate);
             this.plSelectBorrower.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -180,14 +180,14 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Select Borrower";
             // 
-            // ctrLookUpControl1
+            // ctrPersonLookUp
             // 
-            this.ctrLookUpControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ctrLookUpControl1.Location = new System.Drawing.Point(146, 3);
-            this.ctrLookUpControl1.Name = "ctrLookUpControl1";
-            this.ctrLookUpControl1.Size = new System.Drawing.Size(167, 87);
-            this.ctrLookUpControl1.TabIndex = 1;
-            this.ctrLookUpControl1.Load += new System.EventHandler(this.ctrLookUpControl1_Load);
+            this.ctrPersonLookUp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ctrPersonLookUp.Location = new System.Drawing.Point(146, 3);
+            this.ctrPersonLookUp.Name = "ctrPersonLookUp";
+            this.ctrPersonLookUp.Size = new System.Drawing.Size(167, 87);
+            this.ctrPersonLookUp.TabIndex = 1;
+            this.ctrPersonLookUp.Load += new System.EventHandler(this.ctrLookUpControl1_Load);
             // 
             // label3
             // 
@@ -233,7 +233,7 @@
         private UI_Theme.CustomGroupBox gbBorrow;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private ctrLookUpControl ctrLookUpControl1;
+        private ctrPersonLookUp ctrPersonLookUp;
         private ctrBookLookUP ctrBookLookUP1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;

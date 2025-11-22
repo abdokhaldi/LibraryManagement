@@ -1,5 +1,7 @@
-﻿using PL_LibraryManagement.Borrowings;
+﻿using BLL_LibraryManagement;
+using PL_LibraryManagement.Borrowings;
 using PL_LibraryManagement.UI_Theme;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace PL_LibraryManagement.Managers
@@ -28,19 +30,28 @@ namespace PL_LibraryManagement.Managers
         }
          private void AttachEvents()
         {
-            _ManageBorrowingList.BorrowCardAdded -= AddBorrowControl;
-            _ManageBorrowingList.BorrowCardAdded += AddBorrowControl;
+            _ManageBorrowingList.BorrowingCardAdded -= AddBorrowControl;
+            _ManageBorrowingList.BorrowingCardAdded += AddBorrowControl;
+
+           
         }
 
         private void AddBorrowControl()
         {
+            
             if (_MainPanel.Contains(_BorrowControl))
             {
-                return;
+                _MainPanel.Controls.Remove(_BorrowControl);
+                _BorrowControl = null;
+                _MainPanel.Dispose();
             }
+              _BorrowControl = new ctrBorrowControl();
+
             _ManageBorrowingList.Dock = DockStyle.Top;
             CardPosition.SetCardPosition(CardPosition.enCardLocation.BottomCenter,_MainPanel, _BorrowControl);
             _MainPanel.Controls.Add(_BorrowControl);
         }
+        
+
     }
 }

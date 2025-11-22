@@ -3,6 +3,7 @@ using DTO_LibraryManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 namespace BLL_LibraryManagement
 {
     public class BorrowingService
@@ -10,6 +11,7 @@ namespace BLL_LibraryManagement
         public enum Mode {AddNew=1,Update=2 }
         public int BorrowingID { get; private set; }
         public int BookID { get; set; }
+        public bool IsCanceled { get; set; }
         public int PersonID { get; set; }
         public DateTime BorrowingDate { get; set; }
         public DateTime DueDate{ get; set; }
@@ -20,7 +22,7 @@ namespace BLL_LibraryManagement
 
         public Mode _Mode = Mode.AddNew;
 
-        public BorrowingService(int borrowingID, int bookID, int memberID, DateTime borrowingDate, DateTime dueDate, DateTime? returnDate, string status)
+        public BorrowingService(int borrowingID, int bookID, int memberID, DateTime borrowingDate, DateTime dueDate, DateTime? returnDate, string status,bool isCanceled)
         {
             BorrowingID = borrowingID;
             BookID = bookID;
@@ -29,6 +31,7 @@ namespace BLL_LibraryManagement
             DueDate = dueDate;
             ReturnDate = returnDate;
             Status = status;
+            IsCanceled = isCanceled;
             IsActive = _IsActiveBorrowing(BookID,PersonID);
             _Mode = Mode.Update;
         }
@@ -50,15 +53,15 @@ namespace BLL_LibraryManagement
         private BorrowingDTO FillCurrentDataToTransfer()
         {
             return new BorrowingDTO
-                         {
-                          BookID = BookID,
-                          PersonID = PersonID,
-                          BorrowingDate = BorrowingDate,
-                          DueDate = DueDate,
-                          ReturnDate = ReturnDate,
-                          Status = Status,
-                        
-                          };
+            {
+                BookID = BookID,
+                PersonID = PersonID,
+                BorrowingDate = BorrowingDate,
+                DueDate = DueDate,
+                ReturnDate = ReturnDate,
+                Status = Status,
+                IsCanceled = IsCanceled,
+            };
            }
 
         private bool __AddNewBorrowing()
@@ -139,7 +142,7 @@ namespace BLL_LibraryManagement
             if (borrowingsList == null) return null;
 
             var borrowings = borrowingsList.Select(
-                b => new BorrowingService(b.BorrowingID, b.BookID, b.PersonID, b.BorrowingDate, b.DueDate, b.ReturnDate, b.Status)
+                b => new BorrowingService(b.BorrowingID, b.BookID, b.PersonID, b.BorrowingDate, b.DueDate, b.ReturnDate, b.Status,b.IsCanceled)
               ).ToList();
 
             return borrowings;
@@ -149,8 +152,19 @@ namespace BLL_LibraryManagement
         {
             var dtoInfo = BorrowingRepository.FindBorrowingByID(id);
            if(dtoInfo == null) return null;
-            return new BorrowingService(dtoInfo.BorrowingID,dtoInfo.BookID,dtoInfo.PersonID,dtoInfo.BorrowingDate,dtoInfo.DueDate,dtoInfo.ReturnDate,dtoInfo.Status);
+            return new BorrowingService(dtoInfo.BorrowingID,dtoInfo.BookID,dtoInfo.PersonID,dtoInfo.BorrowingDate,dtoInfo.DueDate,dtoInfo.ReturnDate,dtoInfo.Status,dtoInfo.IsCanceled);
         }
+
+        public static OperationResultBLL CancelBorrowing(int borrowingID,int bookID)
+        {
+            
+               
+            bool IsCanceled = BorrowingRepository.CancelBorrowing(borrowingID,bookID);
+            if (IsCanceled)
+                return OperationResultBLL.Ok("Borrowing canceled.");
+            return OperationResultBLL.Fail("Failed:Borrowing was not canceled!");
+        }
+
 
         public OperationResultBLL ReturnBookAndRestock()
         {
