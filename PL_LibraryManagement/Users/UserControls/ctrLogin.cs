@@ -35,7 +35,11 @@ namespace PL_LibraryManagement
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
+            if (!string.IsNullOrEmpty(username) && string.IsNullOrEmpty(password))
+                return;
+
             OperationResultBLL loginResult = UserService.Login(username,password);
+           
             if (!loginResult.Success)
             {
                 lblErrorMessage.Text = loginResult.Message;
@@ -45,9 +49,6 @@ namespace PL_LibraryManagement
             LoginResult?.Invoke(loginResult);
         }
 
-        private void txtUsername_Validating(object sender, CancelEventArgs e)
-        {
-           
-        }
+        
     }
 }

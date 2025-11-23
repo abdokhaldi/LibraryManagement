@@ -12,6 +12,7 @@ namespace PL_LibraryManagement.DashBoard
         public ctrRecentActivities()
         {
             InitializeComponent();
+            dgvRecentActivities.RowHeadersVisible = false;
             AppColors.SetupDataGridViewUI(dgvRecentActivities);
             UIConfigurator.ConfigureDataGridView(dgvRecentActivities);
            // gbActivities.ForeColor = AppColors.Background;
@@ -34,7 +35,7 @@ namespace PL_LibraryManagement.DashBoard
                     ["EntityID"]    = ("Entity ID", 100),
                 };
             
-            UIConfigurator._CreateColumns(dgvRecentActivities, columns);
+            UIConfigurator.CreateColumns(dgvRecentActivities, columns);
         }
      }
         

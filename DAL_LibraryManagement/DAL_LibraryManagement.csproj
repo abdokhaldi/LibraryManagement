@@ -50,6 +50,8 @@
     <Compile Include="MemberRepository.cs" />
     <Compile Include="PersonRepository.cs" />
     <Compile Include="RoleRepository.cs" />
+    <Compile Include="SmallBookRepository.cs" />
+    <Compile Include="SmallPersonRepository.cs" />
     <Compile Include="SqlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserRepository.cs" />

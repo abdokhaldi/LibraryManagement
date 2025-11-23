@@ -17,6 +17,9 @@ namespace PL_LibraryManagement.DashBoard
         public ctrStatistics()
         {
             InitializeComponent();
+            lblTitle.ForeColor = AppColors.Primary;
+            lblTitle.Font = AppFonts.Title;
+            lblTitle.Anchor = AnchorStyles.Left | AnchorStyles.Top;
             tblPanel.Resize += (s, e) => CenterizeLabels();
 
         }

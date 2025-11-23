@@ -35,6 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvBorrowings = new System.Windows.Forms.DataGridView();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
@@ -53,7 +54,7 @@
             this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvBorrowings
+            // dgvMembers
             // 
             this.dgvBorrowings.AllowUserToAddRows = false;
             this.dgvBorrowings.AllowUserToDeleteRows = false;
@@ -80,7 +81,7 @@
             this.dgvBorrowings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvBorrowings.EnableHeadersVisualStyles = false;
             this.dgvBorrowings.Location = new System.Drawing.Point(0, 148);
-            this.dgvBorrowings.Name = "dgvBorrowings";
+            this.dgvBorrowings.Name = "dgvMembers";
             this.dgvBorrowings.ReadOnly = true;
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.dgvBorrowings.RowsDefaultCellStyle = dataGridViewCellStyle4;
@@ -91,6 +92,7 @@
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlTop.Controls.Add(this.button2);
             this.pnlTop.Controls.Add(this.panel3);
             this.pnlTop.Controls.Add(this.lblTitle);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -98,6 +100,19 @@
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(756, 148);
             this.pnlTop.TabIndex = 11;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.LightGreen;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(543, 105);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(194, 37);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Borrow new";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
@@ -163,31 +178,34 @@
             this.editToolStripMenuItem,
             this.desactiveToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip1";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(155, 92);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(126, 92);
             // 
             // cardInfoToolStripMenuItem
             // 
             this.cardInfoToolStripMenuItem.Name = "cardInfoToolStripMenuItem";
-            this.cardInfoToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.cardInfoToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.cardInfoToolStripMenuItem.Text = "Book Info";
             // 
             // addStripMenuItem1
             // 
             this.addStripMenuItem1.Name = "addStripMenuItem1";
-            this.addStripMenuItem1.Size = new System.Drawing.Size(154, 22);
-            this.addStripMenuItem1.Text = "Add book";
+            this.addStripMenuItem1.Size = new System.Drawing.Size(125, 22);
+            this.addStripMenuItem1.Text = "New";
+            this.addStripMenuItem1.Click += new System.EventHandler(this.addStripMenuItem1_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.editToolStripMenuItem.Text = "Edit book";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // desactiveToolStripMenuItem
             // 
             this.desactiveToolStripMenuItem.Name = "desactiveToolStripMenuItem";
-            this.desactiveToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.desactiveToolStripMenuItem.Text = "Desactive book";
+            this.desactiveToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.desactiveToolStripMenuItem.Text = "Cancel";
+            this.desactiveToolStripMenuItem.Click += new System.EventHandler(this.deactivateToolStripMenuItem_Click);
             // 
             // ctrManageBorrowings
             // 
@@ -222,5 +240,6 @@
         private System.Windows.Forms.ToolStripMenuItem addStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem desactiveToolStripMenuItem;
+        private System.Windows.Forms.Button button2;
     }
 }

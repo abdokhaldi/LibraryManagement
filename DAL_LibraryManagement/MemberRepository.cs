@@ -25,7 +25,7 @@ namespace DAL_LibraryManagement
             {
                data = new MemberDTO
                 {
-                    MemberID = Convert.ToInt32(reader["MemberID"]),
+                    MemberID = Convert.ToInt32(reader["PersonID"]),
                     PersonID = Convert.ToInt32(reader["PersonID"]),
                     JoinDate = Convert.ToDateTime(reader["JoinDate"]),
                     IsActive = Convert.ToBoolean(reader["IsActive"]),
@@ -62,7 +62,7 @@ namespace DAL_LibraryManagement
         public static MemberDTO FindMemberByID(int id)
         {
            
-            string query = @"SELECT * FROM Members WHERE MemberID=@id;";
+            string query = @"SELECT * FROM Members WHERE PersonID=@id;";
             var parameters = new Dictionary<string, (SqlDbType, object,int?)>
             {
                 ["@id"] = (SqlDbType.Int,id,null)
@@ -73,7 +73,7 @@ namespace DAL_LibraryManagement
             
                 return new MemberDTO
                 {
-                    MemberID = Convert.ToInt32(reader["MemberID"]),
+                    MemberID = Convert.ToInt32(reader["PersonID"]),
                     PersonID = Convert.ToInt32(reader["PersonID"]),
                     JoinDate = Convert.ToDateTime(reader["JoinDate"]),
                     IsActive = Convert.ToBoolean(reader["IsActive"]),
@@ -86,7 +86,7 @@ namespace DAL_LibraryManagement
             string query = @"UPDATE Members
                              SET PersonID = @personID,
                                  JoinDate = @joinDate
-                             WHERE MemberID = @memberID;";
+                             WHERE PersonID = @memberID;";
 
             var parameters = new Dictionary<string, (SqlDbType, object, int?)>()
             {
@@ -121,7 +121,7 @@ namespace DAL_LibraryManagement
             
                 return new MemberDTO
                 {
-                    MemberID = Convert.ToInt32(reader["MemberID"]),
+                    MemberID = Convert.ToInt32(reader["PersonID"]),
                     PersonID = Convert.ToInt32(reader["PersonID"]),
                     JoinDate = Convert.ToDateTime(reader["JoinDate"]),
                     IsActive = Convert.ToBoolean(reader["IsActive"]),
@@ -133,7 +133,7 @@ namespace DAL_LibraryManagement
         {
             string query = @"UPDATE Members 
                        SET IsActive=@isActive 
-                           WHERE MemberID=@memberID;";
+                           WHERE PersonID=@memberID;";
 
             var parameters = new Dictionary<string,(SqlDbType,object,int?)> {
 

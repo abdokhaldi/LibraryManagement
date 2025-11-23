@@ -18,7 +18,7 @@ namespace PL_LibraryManagement
         private DashboardManager _DashboardManager;
         private UsersManager _UsersManager;
         private BorrowingManager _BorrowingManager;
-        
+        private MemberManager _MemberManager;
         public frmHome()
         {
             InitializeComponent();
@@ -32,7 +32,8 @@ namespace PL_LibraryManagement
             _BookManager = new BookManager(this.mainPanel);
             _UsersManager = new UsersManager(mainPanel);
             _BorrowingManager = new BorrowingManager(mainPanel);
-        }
+            _MemberManager = new MemberManager(mainPanel);
+        } 
       
         private void SetMDIBackgroundColor()
         {
@@ -103,6 +104,11 @@ namespace PL_LibraryManagement
         private void manageBorrowingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             _BorrowingManager.ShowBorrowingList();
+        }
+
+        private void manageMembersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _MemberManager.ShowMembersList();
         }
 
         // event to add book Card

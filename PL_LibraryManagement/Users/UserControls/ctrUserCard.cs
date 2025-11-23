@@ -79,7 +79,7 @@ namespace PL_LibraryManagement.Users.UserControls
             if (_SelectedUser == null) return;
             if (_SelectedUser.IsActive)
             {
-               if( UserService.DesactiveUser(_SelectedUser.UserID))
+               if( UserService.DeactivateUser(_SelectedUser.UserID))
                 ChangeButtonAppearance(btnActivate,"Activate",Color.Green);
                MessageBox.Show("User deactivated .");
                 _SelectedUser.IsActive = false;

@@ -131,5 +131,10 @@ namespace BLL_LibraryManagement
             var member = FindMemberByID(id);
             return member != null;
         }
+        public static bool IsPersonAsMember(int id)
+        {
+            var member = FindMemberByPersonID(id);
+            return (member != null);
+        }
     }
 }

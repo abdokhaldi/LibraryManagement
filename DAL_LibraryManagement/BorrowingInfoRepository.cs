@@ -22,12 +22,13 @@ namespace DAL_LibraryManagement
                     new BorrowingInfoDTO
                     {
                         BorrowingID = (int)reader["BorrowingID"],
-                        Title = reader["Title"].ToString(),
+                        Title = Convert.ToString(reader["Title"]),
                         FullName = reader["FullName"].ToString(),
                         BorrowingDate = (DateTime)reader["BorrowingDate"],
                         DueDate = (DateTime)reader["DueDate"],
                         ReturnDate = reader["ReturnDate"]==DBNull.Value?null: Convert.ToDateTime(reader["ReturnDate"]),
                         Status = (string)reader["Status"],
+                        BookID = (int)reader["BookID"],
                     }
                     );
             }

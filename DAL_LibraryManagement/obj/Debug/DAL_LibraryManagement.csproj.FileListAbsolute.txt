@@ -1,9 +1,0 @@
-C:\Users\Hp\source\repos\DAL_LibraryManagement\bin\Debug\DAL_LibraryManagement.dll
-C:\Users\Hp\source\repos\DAL_LibraryManagement\bin\Debug\DAL_LibraryManagement.pdb
-C:\Users\Hp\source\repos\DAL_LibraryManagement\bin\Debug\DTO_LibraryManagement.dll
-C:\Users\Hp\source\repos\DAL_LibraryManagement\bin\Debug\DTO_LibraryManagement.pdb
-C:\Users\Hp\source\repos\DAL_LibraryManagement\obj\Debug\DAL_LibraryManagement.csproj.AssemblyReference.cache
-C:\Users\Hp\source\repos\DAL_LibraryManagement\obj\Debug\DAL_LibraryManagement.csproj.CoreCompileInputs.cache
-C:\Users\Hp\source\repos\DAL_LibraryManagement\obj\Debug\DAL_Libr.37D7E45D.Up2Date
-C:\Users\Hp\source\repos\DAL_LibraryManagement\obj\Debug\DAL_LibraryManagement.dll
-C:\Users\Hp\source\repos\DAL_LibraryManagement\obj\Debug\DAL_LibraryManagement.pdb

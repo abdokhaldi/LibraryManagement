@@ -1,1 +1,19 @@
-".vs/"  "bin/"  "obj/"  "*.user" 
+# الملفات الثنائية ومخرجات البناء
+[Bb]in/
+[Oo]bj/
+*.dll
+*.pdb
+*.exe
+
+# ملفات Visual Studio المؤقتة والخاصة بالمستخدم
+.vs/
+*.suo
+*.user
+*.bak
+*csproj.user
+
+# ملفات فهرسة Copilot/VS
+*vsidx
+*db
+*db-shm
+*db-wal

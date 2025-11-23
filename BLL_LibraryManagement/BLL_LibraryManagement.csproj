@@ -60,6 +60,8 @@
     <Compile Include="RoleService.cs" />
     <Compile Include="SecurityService.cs" />
     <Compile Include="CurrentUserInfo.cs" />
+    <Compile Include="MinilBookService.cs" />
+    <Compile Include="MiniPersonService.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>

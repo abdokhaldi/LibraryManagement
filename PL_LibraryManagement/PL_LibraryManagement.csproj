@@ -60,14 +60,51 @@
     <Compile Include="Books\ctrBookCard.Designer.cs">
       <DependentUpon>ctrBookCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Borrowings\ctrBookLookUP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Borrowings\ctrBookLookUP.Designer.cs">
+      <DependentUpon>ctrBookLookUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrowings\ctrBorrowControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Borrowings\ctrBorrowControl.Designer.cs">
+      <DependentUpon>ctrBorrowControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrowings\ctrEditDueDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Borrowings\ctrEditDueDate.Designer.cs">
+      <DependentUpon>ctrEditDueDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrowings\ctrPersonLookUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Borrowings\ctrPersonLookUp.Designer.cs">
+      <DependentUpon>ctrPersonLookUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Borrowings\ctrManageBorrowings.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Borrowings\ctrManageBorrowings.Designer.cs">
       <DependentUpon>ctrManageBorrowings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Borrowings\frmBorrowScrean.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrowings\frmBorrowScrean.Designer.cs">
+      <DependentUpon>frmBorrowScrean.cs</DependentUpon>
+    </Compile>
     <Compile Include="Managers\BorrowingManager.cs" />
+    <Compile Include="Managers\MemberManager.cs" />
     <Compile Include="Managers\UsersManager.cs" />
+    <Compile Include="Members\ctrMembers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Members\ctrMembers.Designer.cs">
+      <DependentUpon>ctrMembers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\Forms\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,8 +204,26 @@
     <EmbeddedResource Include="Books\ctrBookCard.resx">
       <DependentUpon>ctrBookCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Borrowings\ctrBookLookUP.resx">
+      <DependentUpon>ctrBookLookUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrowings\ctrBorrowControl.resx">
+      <DependentUpon>ctrBorrowControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrowings\ctrEditDueDate.resx">
+      <DependentUpon>ctrEditDueDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrowings\ctrPersonLookUp.resx">
+      <DependentUpon>ctrPersonLookUp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Borrowings\ctrManageBorrowings.resx">
       <DependentUpon>ctrManageBorrowings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrowings\frmBorrowScrean.resx">
+      <DependentUpon>frmBorrowScrean.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\ctrMembers.resx">
+      <DependentUpon>ctrMembers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

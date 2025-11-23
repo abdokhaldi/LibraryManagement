@@ -96,14 +96,24 @@ namespace BLL_LibraryManagement
             PersonDTO personData = _FillDTOToTransferData();
            this.PersonID = PersonRepository.AddNewPerson( personData );
            
-            return this.PersonID != -1;
+           if( this.PersonID > 0)
+            {
+                ActivityRepository.AddActivity("Add", $"Person: {personData.FirstName + " " + personData.LastName}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "Person", PersonID);
+                return true;
+            }
+            return false;
         }
         private bool _UpdatePersonByID()
         {
             PersonDTO personData = _FillDTOToTransferData();// fill the tdo object with current object values
             int rowsEffected = PersonRepository.UpdatePersonByID(personData);
-            
-            return rowsEffected > 0;
+           
+            if (rowsEffected > 0)
+            {
+                ActivityRepository.AddActivity("Update", $"Update: {personData.FirstName + " " + personData.LastName}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "Person", PersonID);
+                return true;
+            }
+            return false;
         }
 
         public OperationResultBLL Save()
@@ -113,7 +123,7 @@ namespace BLL_LibraryManagement
                 case Mode.AddNew:
                     if (_AddNewPerson())
                     {
-                        ActivityRepository.AddActivity("Add", $"New person Added : {FirstName} {LastName}", DateTime.Now, "", "Person", PersonID);
+                        ActivityRepository.AddActivity("Add", $"New person Added : {FirstName} {LastName}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "Person", PersonID);
 
                         _Mode = Mode.Update;
                         return OperationResultBLL.Ok("Person has been added successfully.");
@@ -126,7 +136,7 @@ namespace BLL_LibraryManagement
                 case Mode.Update:
                     if (_UpdatePersonByID())
                     {
-                        ActivityRepository.AddActivity("Update", $"person updated : {FirstName} {LastName}", DateTime.Now, "", "Person", PersonID);
+                        ActivityRepository.AddActivity("Update", $"Person updated : {FirstName} {LastName}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "Person", PersonID);
 
                         return OperationResultBLL.Ok("Person has been Edited successfully!");
                     }
@@ -173,18 +183,18 @@ namespace BLL_LibraryManagement
             
                 if (rowsAffected > 0)
                 {
-                    ActivityRepository.AddActivity("Deactive", $"Desactivated person: {person.FirstName} {person.LastName}", DateTime.Now, "", "Person", person.PersonID);
+                    ActivityRepository.AddActivity("Deactive", $"Deactivated person: {person.FirstName} {person.LastName}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "Person", person.PersonID);
                 return OperationResultBLL.Ok("Person Deactivated .");
                 }
 
             return OperationResultBLL.Fail("Person cannot be deactivated .");
         }
-        public static OperationResultBLL ActivePerson(PersonService person)
+        public static OperationResultBLL ActivatePerson(PersonService person)
         {
             int rowsAffected = PersonRepository.SetPersonActiveStatus(person.PersonID, true);
             if (rowsAffected > 0)
             {
-                ActivityRepository.AddActivity("Reactive", $"Reactivated person : {person.FirstName} {person.LastName}", DateTime.Now, "", "Person", person.PersonID);
+                ActivityRepository.AddActivity("Reactive", $"Reactivated person : {person.FirstName} {person.LastName}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "Person", person.PersonID);
                 return OperationResultBLL.Ok("Person Reactivated .");
             }
 
@@ -196,7 +206,7 @@ namespace BLL_LibraryManagement
             int rowsAffected = PersonRepository.DeletePerson(person.PersonID);
             if (rowsAffected > 0)
             {
-                ActivityRepository.AddActivity("Delete", $"Deleted person : {person.FirstName} {person.LastName}", DateTime.Now, "", "Person", person.PersonID);
+                ActivityRepository.AddActivity("Delete", $"Deleted person : {person.FirstName} {person.LastName}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "Person", person.PersonID);
                 return OperationResultBLL.Ok("Person was deleted successfully .");
             }
             return OperationResultBLL.Fail("person cannot be deleted");

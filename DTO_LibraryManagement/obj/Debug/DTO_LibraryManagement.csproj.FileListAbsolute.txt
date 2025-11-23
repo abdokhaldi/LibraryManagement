@@ -1,6 +1,0 @@
-C:\Users\Hp\source\repos\DTO_LibraryManagement\bin\Debug\DTO_LibraryManagement.dll
-C:\Users\Hp\source\repos\DTO_LibraryManagement\bin\Debug\DTO_LibraryManagement.pdb
-C:\Users\Hp\source\repos\DTO_LibraryManagement\obj\Debug\DTO_LibraryManagement.csproj.AssemblyReference.cache
-C:\Users\Hp\source\repos\DTO_LibraryManagement\obj\Debug\DTO_LibraryManagement.csproj.CoreCompileInputs.cache
-C:\Users\Hp\source\repos\DTO_LibraryManagement\obj\Debug\DTO_LibraryManagement.dll
-C:\Users\Hp\source\repos\DTO_LibraryManagement\obj\Debug\DTO_LibraryManagement.pdb

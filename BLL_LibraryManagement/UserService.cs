@@ -120,7 +120,12 @@ namespace BLL_LibraryManagement
                 UserID = UserRepository.AddNewUser(userDTO);
                }
 
-        return (UserID > 0);
+        if(UserID > 0)
+            {
+                ActivityRepository.AddActivity("Add", $"Add User: {UserID}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "User", UserID);
+                return true;
+            }
+            return false;
         }
 
         private bool _UpdateUser()
@@ -128,8 +133,12 @@ namespace BLL_LibraryManagement
             var userDTO = _FillObjectToTransfer();
             
             int rowsAffected = UserRepository.UpdateUser(userDTO);
-               return (rowsAffected > 0);
-           
+               if(rowsAffected > 0)
+            {
+                ActivityRepository.AddActivity("Update", $"Update User: {UserID}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "User", UserID);
+                return true;
+            }
+            return false;
         }
 
         public OperationResultBLL Save()
@@ -164,15 +173,24 @@ namespace BLL_LibraryManagement
             return OperationResultBLL.Fail();
           }
        
-        public static bool DesactiveUser(int userID)
+        public static bool DeactivateUser(int userID)
         {
             int rowsAffected = UserRepository.SetUserActiveStatus(userID,false);
-            return (rowsAffected > 0);
+            if (rowsAffected > 0){
+                ActivityRepository.AddActivity("Deactivate", $"Deactivate User: {userID}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "User", userID);
+                return true;
+            }
+            return false;
         }
         public static bool ActivateUser(int userID)
         {
             int rowsAffected = UserRepository.SetUserActiveStatus(userID, true);
-            return (rowsAffected > 0);
+            if (rowsAffected > 0)
+            {
+                ActivityRepository.AddActivity("Activate", $"Activate User: {userID}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "User", userID);
+                return true;
+            }
+            return false;
         }
 
         public static OperationResultBLL Login(string username, string enteredPassword)
@@ -186,7 +204,8 @@ namespace BLL_LibraryManagement
             if (SecurityService.VerifyPassword(enteredPassword,storedHash))
             {
                 CurrentUser.SetUser(userDTO);
-                return OperationResultBLL.Ok("Login successful .");
+                ActivityRepository.AddActivity("Login", $"User: {userDTO.Username} has logged in", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "User",userDTO.UserID);
+               return OperationResultBLL.Ok("Login successful .");
             }
             return OperationResultBLL.Fail("Password not correct !");
         }

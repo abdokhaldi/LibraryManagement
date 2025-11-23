@@ -103,7 +103,7 @@ namespace PL_LibraryManagement.People.UserControls
             }
             else 
             {
-               OperationResultBLL result = PersonService.ActivePerson(_PersonSelected);
+               OperationResultBLL result = PersonService.ActivatePerson(_PersonSelected);
 
                 if (result.Success)
                 {

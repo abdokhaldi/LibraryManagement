@@ -129,6 +129,7 @@
             this.manageMembersToolStripMenuItem.Name = "manageMembersToolStripMenuItem";
             this.manageMembersToolStripMenuItem.Size = new System.Drawing.Size(244, 30);
             this.manageMembersToolStripMenuItem.Text = "Manage Members";
+            this.manageMembersToolStripMenuItem.Click += new System.EventHandler(this.manageMembersToolStripMenuItem_Click);
             // 
             // peopleToolStripMenuItem
             // 

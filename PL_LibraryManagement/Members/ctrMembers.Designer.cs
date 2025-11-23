@@ -1,6 +1,6 @@
-﻿namespace PL_LibraryManagement.Users.UserControls
+﻿namespace PL_LibraryManagement.Members
 {
-    partial class ctrUsersList
+    partial class ctrMembers
     {
         /// <summary> 
         /// Required designer variable.
@@ -33,33 +33,33 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvUsers = new System.Windows.Forms.DataGridView();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cardInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.activeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvMembers = new System.Windows.Forms.DataGridView();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.searchTimer = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cardInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desactiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvUsers
+            // dgvMembers
             // 
-            this.dgvUsers.AllowUserToAddRows = false;
-            this.dgvUsers.AllowUserToDeleteRows = false;
+            this.dgvMembers.AllowUserToAddRows = false;
+            this.dgvMembers.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.AliceBlue;
-            this.dgvUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvUsers.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvMembers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMembers.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSlateGray;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -67,9 +67,8 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvUsers.ColumnHeadersHeight = 30;
-            this.dgvUsers.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgvMembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMembers.ColumnHeadersHeight = 30;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,66 +76,17 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUsers.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvUsers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUsers.EnableHeadersVisualStyles = false;
-            this.dgvUsers.Location = new System.Drawing.Point(0, 148);
-            this.dgvUsers.Name = "dgvUsers";
-            this.dgvUsers.ReadOnly = true;
+            this.dgvMembers.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvMembers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMembers.EnableHeadersVisualStyles = false;
+            this.dgvMembers.Location = new System.Drawing.Point(0, 148);
+            this.dgvMembers.Name = "dgvMembers";
+            this.dgvMembers.ReadOnly = true;
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.dgvUsers.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsers.Size = new System.Drawing.Size(790, 201);
-            this.dgvUsers.TabIndex = 12;
-            this.dgvUsers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsers_CellDoubleClick);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cardInfoToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.deleteToolStripMenuItem,
-            this.activeToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(130, 92);
-            // 
-            // cardInfoToolStripMenuItem
-            // 
-            this.cardInfoToolStripMenuItem.Name = "cardInfoToolStripMenuItem";
-            this.cardInfoToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.cardInfoToolStripMenuItem.Text = "Card Info";
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.editToolStripMenuItem.Text = "Add";
-            this.editToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.deleteToolStripMenuItem.Text = "Edit";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
-            // 
-            // activeToolStripMenuItem
-            // 
-            this.activeToolStripMenuItem.Name = "activeToolStripMenuItem";
-            this.activeToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.activeToolStripMenuItem.Text = "Deactivate";
-            this.activeToolStripMenuItem.Click += new System.EventHandler(this.desactiveToolStripMenuItem_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.dgvUsers);
-            this.panel1.Controls.Add(this.pnlTop);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(790, 349);
-            this.panel1.TabIndex = 2;
+            this.dgvMembers.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvMembers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMembers.Size = new System.Drawing.Size(715, 174);
+            this.dgvMembers.TabIndex = 12;
             // 
             // pnlTop
             // 
@@ -146,7 +96,7 @@
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(790, 148);
+            this.pnlTop.Size = new System.Drawing.Size(715, 148);
             this.pnlTop.TabIndex = 11;
             // 
             // panel3
@@ -154,7 +104,7 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.txtSearch);
             this.panel3.Controls.Add(this.lblSearch);
-            this.panel3.Location = new System.Drawing.Point(445, 21);
+            this.panel3.Location = new System.Drawing.Point(370, 21);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(342, 61);
             this.panel3.TabIndex = 12;
@@ -187,45 +137,90 @@
             this.lblTitle.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblTitle.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblTitle.Location = new System.Drawing.Point(28, 29);
+            this.lblTitle.Location = new System.Drawing.Point(24, 29);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.lblTitle.Size = new System.Drawing.Size(145, 53);
+            this.lblTitle.Size = new System.Drawing.Size(195, 53);
             this.lblTitle.TabIndex = 11;
-            this.lblTitle.Text = "Users";
+            this.lblTitle.Text = "Members";
             // 
-            // ctrUsersList
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.dgvMembers);
+            this.panel1.Controls.Add(this.pnlTop);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(715, 322);
+            this.panel1.TabIndex = 4;
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cardInfoToolStripMenuItem,
+            this.addStripMenuItem1,
+            this.editToolStripMenuItem,
+            this.desactiveToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip1";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(126, 92);
+            // 
+            // cardInfoToolStripMenuItem
+            // 
+            this.cardInfoToolStripMenuItem.Name = "cardInfoToolStripMenuItem";
+            this.cardInfoToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.cardInfoToolStripMenuItem.Text = "Book Info";
+            // 
+            // addStripMenuItem1
+            // 
+            this.addStripMenuItem1.Name = "addStripMenuItem1";
+            this.addStripMenuItem1.Size = new System.Drawing.Size(125, 22);
+            this.addStripMenuItem1.Text = "New";
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // desactiveToolStripMenuItem
+            // 
+            this.desactiveToolStripMenuItem.Name = "desactiveToolStripMenuItem";
+            this.desactiveToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.desactiveToolStripMenuItem.Text = "Cancel";
+            // 
+            // ctrMembers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "ctrUsersList";
-            this.Size = new System.Drawing.Size(790, 349);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.Name = "ctrMembers";
+            this.Size = new System.Drawing.Size(715, 322);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvUsers;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvMembers;
         private System.Windows.Forms.Panel pnlTop;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Timer searchTimer;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem cardInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem activeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desactiveToolStripMenuItem;
     }
 }

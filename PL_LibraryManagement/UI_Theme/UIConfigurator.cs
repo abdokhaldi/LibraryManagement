@@ -35,34 +35,6 @@ namespace PL_LibraryManagement.UI_Theme
             dataGridView.ColumnHeadersDefaultCellStyle.Font = AppFonts.Button;
         }
 
-        public static void CreateColumns(DataGridView dataGridView,string[] names,string[] headerTexts ,int[] widths)
-        {
- 
-            for (int i = 0; i < names.Length; i++)
-            {
-                dataGridView.Columns.Add(new DataGridViewTextBoxColumn()
-                {
-                    HeaderText = headerTexts[i],
-                    DataPropertyName = names[i],
-                    Width = widths[i],
-                });
-            }
-        }
-
-
-        public static void CreateColumns(DataGridView dataGridView, Dictionary<string, (string, int)> valueColumnProperties)
-        {
-
-            foreach (var val in valueColumnProperties)
-            {
-                dataGridView.Columns.Add(new DataGridViewTextBoxColumn()
-                {
-                    DataPropertyName = val.Key,
-                    HeaderText = val.Value.Item1,
-                    Width = val.Value.Item2,
-                });
-            }
-        }
         private static int ExtractFillWeight(string columnName)
         {
             string fillWeight = columnName.Trim().Substring(columnName.Length-2);
@@ -74,7 +46,7 @@ namespace PL_LibraryManagement.UI_Theme
             }
             return 0;
         }
-        public static void _CreateColumns(DataGridView dataGridView, Dictionary<string, (string, int)> valueColumnProperties)
+        public static void CreateColumns(DataGridView dataGridView, Dictionary<string, (string, int)> valueColumnProperties)
         {
 
             foreach (var val in valueColumnProperties)

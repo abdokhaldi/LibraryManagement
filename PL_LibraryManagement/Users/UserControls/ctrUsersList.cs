@@ -16,9 +16,13 @@ namespace PL_LibraryManagement.Users.UserControls
         public ctrUsersList()
         {
             InitializeComponent();
+            dgvUsers.RowHeadersVisible = false;
             UIConfigurator.ConfigureDataGridView(dgvUsers);
             AppColors.SetupDataGridViewUI(dgvUsers);
-            
+            lblTitle.ForeColor = AppColors.Primary;
+            lblTitle.Font = AppFonts.Title;
+            lblTitle.Anchor = AnchorStyles.Left | AnchorStyles.Top;
+
             this.Load -= ctrUsersList_Load;
             this.Load += ctrUsersList_Load;
         }
@@ -36,7 +40,7 @@ namespace PL_LibraryManagement.Users.UserControls
                 ["IsActive"] = ("Is Active", 100),
                 ["CreatedAt20"] = ("Join Date", 0),
             };
-            UIConfigurator._CreateColumns(dgvUsers,columns);
+            UIConfigurator.CreateColumns(dgvUsers,columns);
         }
         public void ReloadInfo()
         {
@@ -50,6 +54,20 @@ namespace PL_LibraryManagement.Users.UserControls
                
             CreateColumns();
             dgvUsers.DataSource = users ;
+            dgvUsers.CellFormatting += FormattingDataGridValue;
+        }
+        private void FormattingDataGridValue(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+
+            if (dgvUsers.Columns[e.ColumnIndex].DataPropertyName == "IsActive")
+            {
+                if (e.Value is bool value)
+                {
+                    e.Value = value ? "Yes" : "No";
+
+                    e.FormattingApplied = true;
+                }
+            }
         }
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
@@ -85,7 +103,7 @@ namespace PL_LibraryManagement.Users.UserControls
             if (selectedUser == null) return;
             if(selectedUser.IsActive)
             {
-                if (UserService.DesactiveUser(selectedUser.UserID))
+                if (UserService.DeactivateUser(selectedUser.UserID))
                 {
                     activeToolStripMenuItem.Text = "Activate";
                 }

@@ -39,6 +39,28 @@ namespace DAL_LibraryManagement
            
             return cmd.ExecuteReader(CommandBehavior.CloseConnection);
         }
+        public static SqlDataReader ExecuteReaderWildCard(string query, CommandType commandType, Dictionary<string, (SqlDbType, object, int?)> parameters)
+        {
+            var conn = new SqlConnection(connectionString);
+            conn.Open();
+            var cmd = new SqlCommand(query, conn);
+            cmd.CommandType = commandType;
+
+            if (parameters != null)
+            {
+                foreach (var p in parameters)
+                {
+                    var param = cmd.Parameters.Add(p.Key, p.Value.Item1);
+                    if (p.Value.Item3.HasValue)
+                    {
+                        param.Size = p.Value.Item3.Value;
+                    }
+                    param.Value = "%"+p.Value.Item2+"%";
+                }
+            }
+
+            return cmd.ExecuteReader(CommandBehavior.CloseConnection);
+        }
 
         public static object ExecuteCommand(string query,CommandType commandType, ExecuteType executeType,Dictionary<string,(SqlDbType,object,int?)> parameters)
         {
@@ -65,8 +87,7 @@ namespace DAL_LibraryManagement
                             }
                         }
 
-
-                        switch (executeType)
+                      switch (executeType)
                         {
                             case ExecuteType.ExecuteScalar:
                                 returnedValue = comm.ExecuteScalar();
@@ -92,7 +113,7 @@ namespace DAL_LibraryManagement
         {
             var result = new OperationResultBLL();
             object returnedValue = null;
-
+            
             using var conn = new SqlConnection(connectionString);
 
             conn.Open();
@@ -116,20 +137,34 @@ namespace DAL_LibraryManagement
                             {
                                 param.Size = p.Value.Item3.Value;
                             }
-                            param.Value = p.Value.Item2;
+                            param.Value = p.Value.Item2 ?? DBNull.Value;
                         }
-                        
+
                     }
                     if (cmd.returnsValue)
                     {
                         returnedValue = comm.ExecuteScalar();
                     }
-                    comm.ExecuteNonQuery();
+                    else
+                    {
+                        int currentRowsAffected = comm.ExecuteNonQuery();
+                        if (currentRowsAffected == 0 && 
+                            (cmd.query.StartsWith("UPDATE" , StringComparison.OrdinalIgnoreCase) ||
+                            cmd.query.StartsWith("DELETE", StringComparison.OrdinalIgnoreCase)))
+                           
+                        {
+                            transaction.Rollback();
+                            result.Success = false;
+                            result.Message = "Logic failure: The critical operation failed to affect any rows (item already canceled or not found).";
+                            return result; 
+                        }
+                        
+                    }
+
                 }
                 transaction.Commit();
                 result.Success = true;
                 result.ReturnedValue = returnedValue;
-               
             }
             catch (Exception ex)
             {
@@ -137,7 +172,7 @@ namespace DAL_LibraryManagement
 
                 result.Success = false;
                 result.Message = ex.Message;
-                
+
             }
             return result;
         }

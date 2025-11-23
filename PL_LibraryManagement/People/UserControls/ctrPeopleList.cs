@@ -21,6 +21,7 @@ namespace PL_LibraryManagement.People.UserControls
             InitializeComponent();
             SetupUI();
             dgvPeople.DefaultCellStyle.Font = AppFonts.Button;
+            dgvPeople.RowHeadersVisible = false;
             dgvPeople.ColumnHeadersDefaultCellStyle.Font = AppFonts.Button;
             dgvPeople.ColumnHeadersHeight = 35;
             dgvPeople.RowTemplate.Height = 30;
@@ -57,7 +58,7 @@ namespace PL_LibraryManagement.People.UserControls
                     ["IsActive"] = ("Is Active", 90),
                 };
 
-               UIConfigurator._CreateColumns(dgvPeople, columns);
+               UIConfigurator.CreateColumns(dgvPeople, columns);
             }
          }
 

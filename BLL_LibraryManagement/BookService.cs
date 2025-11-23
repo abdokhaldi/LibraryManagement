@@ -131,7 +131,13 @@ namespace BLL_LibraryManagement
             var data = _FillDTOToTransferData();
 
              this.BookID = BookRepository.AddNewBook(data);
-            return this.BookID != -1;
+            
+            if (BookID > 0)
+            {
+                ActivityRepository.AddActivity("Add", $"Add book: {Title}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "Book", BookID);
+                return true;
+            }
+            return false;
         }
 
         private bool _UpdateBookByID()
@@ -139,7 +145,12 @@ namespace BLL_LibraryManagement
             var data = _FillDTOToTransferData();
 
             int rowsAffected = BookRepository.UpdateBookByID(data);
-            return rowsAffected > 0;
+            if (rowsAffected > 0)
+            {
+                ActivityRepository.AddActivity("Update", $"Update book: {Title}", DateTime.Now, CurrentUser.GetCurrentUserInfo().Username, "Book", BookID);
+                return true;
+            }
+            return false;
         }
 
         public OperationResultBLL Save()
@@ -159,6 +170,7 @@ namespace BLL_LibraryManagement
                 case Mode.Update:
                     if (_UpdateBookByID())
                     {
+
                         return OperationResultBLL.Ok("book has been updated successfully .");
                     }
                     return OperationResultBLL.Fail("book was not updated!");
@@ -185,6 +197,7 @@ namespace BLL_LibraryManagement
         public bool DeleteBookByID(int bookID)
         {
             return BookRepository.DeleteBookByID(bookID);
+        
         }
 
         public static int GetQuantity(int id)
@@ -199,7 +212,7 @@ namespace BLL_LibraryManagement
 
             if (rowsAffected > 0)
             {
-                ActivityRepository.AddActivity("Deactivate", $"Deactivated book: {book.Title}", DateTime.Now, "", "Book", book.BookID);
+                ActivityRepository.AddActivity("Deactivate", $"Deactivated book: {book.Title}", DateTime.Now,CurrentUser.GetCurrentUserInfo().Username, "Book", book.BookID);
                 return OperationResultBLL.Ok("Book Deactivated .");
             }
 
