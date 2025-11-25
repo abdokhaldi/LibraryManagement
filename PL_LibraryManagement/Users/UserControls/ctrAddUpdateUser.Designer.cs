@@ -37,13 +37,15 @@
             this.lblPersonID = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnSelectPerson = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
             this.chkIsActive = new System.Windows.Forms.CheckBox();
-            this.btnSelectPerson = new System.Windows.Forms.Button();
+            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbRoles = new System.Windows.Forms.ComboBox();
             this.gbForm.SuspendLayout();
             this.tbForm.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +74,7 @@
             this.tbForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
             this.tbForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.tbForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tbForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
+            this.tbForm.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tbForm.Controls.Add(this.lblUserID, 1, 0);
             this.tbForm.Controls.Add(this.label1, 0, 0);
             this.tbForm.Controls.Add(this.btnClose, 4, 4);
@@ -87,6 +89,8 @@
             this.tbForm.Controls.Add(this.label9, 0, 3);
             this.tbForm.Controls.Add(this.chkIsActive, 4, 3);
             this.tbForm.Controls.Add(this.txtConfirmPassword, 1, 3);
+            this.tbForm.Controls.Add(this.label2, 3, 1);
+            this.tbForm.Controls.Add(this.cbRoles, 4, 1);
             this.tbForm.Location = new System.Drawing.Point(3, 16);
             this.tbForm.Name = "tbForm";
             this.tbForm.RowCount = 5;
@@ -174,6 +178,31 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Username:";
             // 
+            // btnSave
+            // 
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(471, 228);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(82, 35);
+            this.btnSave.TabIndex = 20;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnSelectPerson
+            // 
+            this.btnSelectPerson.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSelectPerson.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectPerson.ForeColor = System.Drawing.Color.White;
+            this.btnSelectPerson.Location = new System.Drawing.Point(471, 3);
+            this.btnSelectPerson.Name = "btnSelectPerson";
+            this.btnSelectPerson.Size = new System.Drawing.Size(82, 43);
+            this.btnSelectPerson.TabIndex = 11;
+            this.btnSelectPerson.Text = "Select person";
+            this.btnSelectPerson.UseVisualStyleBackColor = true;
+            this.btnSelectPerson.Click += new System.EventHandler(this.btnSelectPerson_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -194,15 +223,6 @@
             this.txtPassword.Size = new System.Drawing.Size(111, 26);
             this.txtPassword.TabIndex = 23;
             // 
-            // txtConfirmPassword
-            // 
-            this.txtConfirmPassword.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmPassword.Location = new System.Drawing.Point(111, 196);
-            this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.Size = new System.Drawing.Size(111, 26);
-            this.txtConfirmPassword.TabIndex = 24;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -213,18 +233,6 @@
             this.label9.Size = new System.Drawing.Size(102, 42);
             this.label9.TabIndex = 29;
             this.label9.Text = "Confirm Password:";
-            // 
-            // btnSave
-            // 
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(471, 228);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(82, 35);
-            this.btnSave.TabIndex = 20;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // chkIsActive
             // 
@@ -238,18 +246,35 @@
             this.chkIsActive.Text = "Is Active";
             this.chkIsActive.UseVisualStyleBackColor = true;
             // 
-            // btnSelectPerson
+            // txtConfirmPassword
             // 
-            this.btnSelectPerson.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSelectPerson.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectPerson.ForeColor = System.Drawing.Color.White;
-            this.btnSelectPerson.Location = new System.Drawing.Point(471, 3);
-            this.btnSelectPerson.Name = "btnSelectPerson";
-            this.btnSelectPerson.Size = new System.Drawing.Size(82, 43);
-            this.btnSelectPerson.TabIndex = 11;
-            this.btnSelectPerson.Text = "Select person";
-            this.btnSelectPerson.UseVisualStyleBackColor = true;
-            this.btnSelectPerson.Click += new System.EventHandler(this.btnSelectPerson_Click);
+            this.txtConfirmPassword.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPassword.Location = new System.Drawing.Point(111, 196);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.Size = new System.Drawing.Size(111, 26);
+            this.txtConfirmPassword.TabIndex = 24;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(237, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 21);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Role:";
+            // 
+            // cbRoles
+            // 
+            this.cbRoles.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cbRoles.FormattingEnabled = true;
+            this.cbRoles.Location = new System.Drawing.Point(334, 81);
+            this.cbRoles.Name = "cbRoles";
+            this.cbRoles.Size = new System.Drawing.Size(123, 21);
+            this.cbRoles.TabIndex = 35;
+            this.cbRoles.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // ctrAddUpdateUser
             // 
@@ -282,5 +307,7 @@
         private System.Windows.Forms.Label lblPersonID;
         private System.Windows.Forms.CheckBox chkIsActive;
         public UI_Theme.CustomGroupBox gbForm;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbRoles;
     }
 }

@@ -21,6 +21,7 @@ namespace PL_LibraryManagement.Users.UserControls
             if(user!= null) { 
             LoadUserInfo(_SelectedUser);
             }
+            LoadRoles();
         }
 
         private void SetupForm(UserService user)
@@ -52,20 +53,21 @@ namespace PL_LibraryManagement.Users.UserControls
         {
             UserService user = new UserService();
             user.Username = txtUsername.Text;
-            user.PersonID = 3;
+            user.PersonID = Convert.ToInt32(lblPersonID.Text);
             user.Password = txtPassword.Text;
-            user.RoleID = 1;
+            user.RoleID = Convert.ToInt32(cbRoles.SelectedValue);
             user.CreatedAt = DateTime.Now;
             OperationResultBLL result = user.Save();
             if (result.Success)
             {
-                MessageBox.Show(result.Message);
-                lblUserID.Text = result.ReturnedValue.ToString();
+                MessageBox.Show(result.Message,"Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                lblUserID.Text = user.UserID.ToString();
             }else
             {
-                MessageBox.Show(result.Message);
+                MessageBox.Show(result.Message, "Fail", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
-       }
+        }
 
         
         private void btnClose_Click(object sender, EventArgs e)
@@ -84,7 +86,18 @@ namespace PL_LibraryManagement.Users.UserControls
             personCard.SelectedPersonID += ReceiveSelectedPersonID;
             personCard.ShowDialog();
         }
+        private void LoadRoles()
+        {
+            cbRoles.DataSource = null;
+            var roles = RoleService.GetAllRoles();
+            cbRoles.ValueMember = "RoleID";
+            cbRoles.DisplayMember = "RoleName";
+            cbRoles.DataSource = roles;
+        }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

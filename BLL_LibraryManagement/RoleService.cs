@@ -1,4 +1,5 @@
 ﻿using DAL_LibraryManagement;
+using DTO_LibraryManagement;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,15 @@ namespace BLL_LibraryManagement
             return new RoleService(role.RoleID, role.RoleName);
         }
 
+        public static List<RoleService> GetAllRoles()
+        {
+            var rolesDTO = RoleRepository.GetAllRoles();
+            if (rolesDTO == null) return null;
 
+            var roles = rolesDTO.Select(p => new RoleService(p.RoleID,p.RoleName)).ToList();
+            return roles;
+        }
+
+            
     }
 }

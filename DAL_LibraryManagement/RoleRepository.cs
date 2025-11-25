@@ -10,6 +10,25 @@ namespace DAL_LibraryManagement
 {
     public class RoleRepository
     {
+        public static List<RoleDTO> GetAllRoles()
+        {
+            List<RoleDTO> roles = null;
+            string query = @"SELECT * FROM Roles;";
+            using var reader = SqlHelper.ExecuteReader(query,CommandType.Text,null);
+            if (reader != null)
+                roles = new List<RoleDTO>();
+            while (reader.Read())
+            {
+                roles.Add(
+                    new RoleDTO
+                    {
+                        RoleID = (int)reader["RoleID"],
+                        RoleName = reader["RoleName"].ToString(),
+                    }
+                    );
+            }
+            return roles;
+        }
         public static RoleDTO GetRoleByID(int ID)
         {
             string query = @"SELECT * FROM Roles WHERE RoleID=@ID;";
