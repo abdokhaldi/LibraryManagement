@@ -19,16 +19,24 @@ namespace PL_LibraryManagement
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            using (frmLogin login = new frmLogin())
-            {
-                if (login.ShowDialog() != DialogResult.OK)
-                {
-                    return;
-                }
-            }
-            Application.Run(new frmHome());
+            DialogResult result = DialogResult.None;
 
-           
-        }
+            do
+            {
+                using (frmLogin loginForm = new frmLogin())
+                {
+                    result = loginForm.ShowDialog();
+                }
+
+                if (result == DialogResult.OK)
+                {
+                    using (frmHome mainForm = new frmHome())
+                    {
+                      result = mainForm.ShowDialog();
+                    }
+                }
+
+            } while (result == DialogResult.OK);
+}
     }
 }

@@ -9,14 +9,26 @@ namespace PL_LibraryManagement.Users.UserControls
 {
      partial class ctrAddUpdateUser : UserControl
     {
-        UserService _SelectedUser;
+        UserService _SelectedUser = null;
         public event Action AddUpdateFormClosed;
+        private enum Mode {Add,Update }
+        private Mode _Mode = Mode.Add;
         public ctrAddUpdateUser(UserService user=null)
         {
             InitializeComponent();
             this.Height = this.Height + 23;
             this.Width = this.Width+5;
-            _SelectedUser = user;
+            if(user==null)
+            {
+                _Mode = Mode.Add;
+            }else
+            {
+                _Mode = Mode.Update;
+                _SelectedUser = user;
+                
+                btnSelectPerson.Visible = false;
+            }
+                
             SetupForm(user);
             if(user!= null) { 
             LoadUserInfo(_SelectedUser);
@@ -44,19 +56,32 @@ namespace PL_LibraryManagement.Users.UserControls
             
             lblUserID.Text = user.UserID.ToString();
             txtUsername.Text = user.Username;
-            txtPassword.Text = user.Password;
+            txtPassword.Text = "password";
             lblPersonID.Text = user.PersonID.ToString();
             chkIsActive.Enabled = user.IsActive;
         }
-
-        private void btnSave_Click(object sender, EventArgs e)
+        private void FillUserService(UserService user)
         {
-            UserService user = new UserService();
+          
             user.Username = txtUsername.Text;
             user.PersonID = Convert.ToInt32(lblPersonID.Text);
             user.Password = txtPassword.Text;
             user.RoleID = Convert.ToInt32(cbRoles.SelectedValue);
             user.CreatedAt = DateTime.Now;
+        }
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            UserService user;
+            if(_Mode == Mode.Add)
+            {
+               user  = new UserService();
+            }
+            else
+            {
+                user = _SelectedUser;
+            }
+
+                FillUserService(user);
             OperationResultBLL result = user.Save();
             if (result.Success)
             {
@@ -95,9 +120,6 @@ namespace PL_LibraryManagement.Users.UserControls
             cbRoles.DataSource = roles;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

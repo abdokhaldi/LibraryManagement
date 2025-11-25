@@ -274,7 +274,6 @@
             this.cbRoles.Name = "cbRoles";
             this.cbRoles.Size = new System.Drawing.Size(123, 21);
             this.cbRoles.TabIndex = 35;
-            this.cbRoles.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // ctrAddUpdateUser
             // 

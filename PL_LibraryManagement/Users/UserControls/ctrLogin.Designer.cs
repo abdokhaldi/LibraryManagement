@@ -45,7 +45,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.56436F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.43564F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 103F));
             this.tableLayoutPanel1.Controls.Add(this.lblTitle, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtPassword, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblUsername, 0, 1);
@@ -85,7 +85,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(176, 137);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(219, 33);
+            this.txtPassword.Size = new System.Drawing.Size(218, 33);
             this.txtPassword.TabIndex = 4;
             // 
             // lblUsername
@@ -118,7 +118,7 @@
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(176, 86);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(219, 33);
+            this.txtUsername.Size = new System.Drawing.Size(218, 33);
             this.txtUsername.TabIndex = 3;
             // 
             // lblPassword
@@ -137,9 +137,9 @@
             this.button3.BackColor = System.Drawing.Color.OrangeRed;
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(401, 3);
+            this.button3.Location = new System.Drawing.Point(400, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 35);
+            this.button3.Size = new System.Drawing.Size(98, 35);
             this.button3.TabIndex = 7;
             this.button3.Text = "X";
             this.button3.UseVisualStyleBackColor = false;
@@ -153,7 +153,7 @@
             this.lblErrorMessage.ForeColor = System.Drawing.Color.OrangeRed;
             this.lblErrorMessage.Location = new System.Drawing.Point(176, 202);
             this.lblErrorMessage.Name = "lblErrorMessage";
-            this.lblErrorMessage.Size = new System.Drawing.Size(219, 17);
+            this.lblErrorMessage.Size = new System.Drawing.Size(218, 17);
             this.lblErrorMessage.TabIndex = 9;
             // 
             // ctrLogin

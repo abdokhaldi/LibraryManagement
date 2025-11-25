@@ -10,7 +10,7 @@ namespace BLL_LibraryManagement
     public static class CurrentUser
     {
         private static UserDTO _CurrentUser ;
-        private enum Role {Admin,User,None }
+        private enum Role {Admin=1,User=2,None=0 }
         private static Role _Role = Role.None;
         public readonly struct UserInfo
         {
@@ -18,7 +18,7 @@ namespace BLL_LibraryManagement
             public int PersonID { get; }
             public string Username { get; }
             public int RoleID { get; }
-
+            
             public UserInfo(int userID, int personID, string username,int roleID)
             {
                 UserID = userID;
@@ -32,7 +32,7 @@ namespace BLL_LibraryManagement
 
         public static bool IsAdmin()
         {
-            if (_Role == Role.Admin)
+            if (GetCurrentUserInfo().RoleID ==1)
             {
                 return true;
             }

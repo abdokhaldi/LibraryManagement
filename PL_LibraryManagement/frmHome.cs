@@ -4,6 +4,7 @@ using PL_LibraryManagement.DashBoard;
 using PL_LibraryManagement.Managers;
 using PL_LibraryManagement.People.UserControls;
 using PL_LibraryManagement.UI_Theme;
+using PL_LibraryManagement.Users.Forms;
 using PL_LibraryManagement.Users.UserControls;
 using System;
 using System.Drawing;
@@ -22,10 +23,11 @@ namespace PL_LibraryManagement
         public frmHome()
         {
             InitializeComponent();
-           // if (!CurrentUser.IsAdmin())
-           // {
-           //     menuStrip1.Items.Remove(usersToolStripMenuItem);
-           // }
+            if (!CurrentUser.IsAdmin())
+            {
+                menuStrip1.Items.Remove(usersToolStripMenuItem);
+                usersToolStripMenuItem.Dispose();
+            }
             mainPanel.Padding = new Padding(25,10,25,15);
             _PeopleManager = new PeopleManager(this.mainPanel);
             _DashboardManager = new DashboardManager(this.mainPanel);
@@ -110,6 +112,17 @@ namespace PL_LibraryManagement
         {
             _MemberManager.ShowMembersList();
         }
+
+        private void logToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CurrentUser.Logout();
+
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+           
+            
+            
+           }
 
         // event to add book Card
 

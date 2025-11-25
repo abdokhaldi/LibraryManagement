@@ -178,8 +178,9 @@
             // logToolStripMenuItem
             // 
             this.logToolStripMenuItem.Name = "logToolStripMenuItem";
-            this.logToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
+            this.logToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.logToolStripMenuItem.Text = " Logout";
+            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 

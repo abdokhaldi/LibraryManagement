@@ -143,6 +143,8 @@ namespace BLL_LibraryManagement
 
         public OperationResultBLL Save()
         {
+            if (!CurrentUser.IsAdmin())
+                return OperationResultBLL.Ok("You are not admin , you don't have a permission to edit users !");
             if (_Mode==Mode.AddNew || _Mode == Mode.Update)
             {
                 if (!string.IsNullOrEmpty(this.Password))
