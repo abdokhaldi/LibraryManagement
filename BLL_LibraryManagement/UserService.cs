@@ -115,6 +115,7 @@ namespace BLL_LibraryManagement
         private bool _AddNewUser()
         {
             var userDTO = _FillObjectToTransfer();
+            
             /// ADD user  and return  newUserID
             if (userDTO != null) { 
                 UserID = UserRepository.AddNewUser(userDTO);
@@ -143,6 +144,10 @@ namespace BLL_LibraryManagement
 
         public OperationResultBLL Save()
         {
+            if (string.IsNullOrEmpty(Password) || Password.Length < 6)
+            {
+                return OperationResultBLL.Ok("the password must be at list 6 characters."); ;
+            }
             if (!CurrentUser.IsAdmin())
                 return OperationResultBLL.Ok("You are not admin , you don't have a permission to edit users !");
             if (_Mode==Mode.AddNew || _Mode == Mode.Update)
